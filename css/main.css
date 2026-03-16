@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    font-family: 'Poppins', serif;
     font-family: 'Montserrat', serif;
 }
 
@@ -9,8 +8,12 @@ body{
     src: url("../assets/fonts/Mythology\ Of\ Egypt.otf");
 }
 
-h1, h2, h3, h4, h5 ,h6{
+h1, h2{
     font-family: "TitleFont";
+}
+
+h3, h4, h5, h6{
+    font-family: 'Poppins', serif;;
 }
 
 .homeHeader{
@@ -33,7 +36,7 @@ h1, h2, h3, h4, h5 ,h6{
     margin-right: 60px;
     background-color: white;
     opacity: 65%;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     border-radius: 40px;
 }
 
@@ -54,4 +57,86 @@ h1, h2, h3, h4, h5 ,h6{
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+.adoptTeaser{
+    height: 100vh;
+    background-color: #002d68;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+
+    display: flex;
+}
+
+.adoptTeaserImage{
+    margin-left: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#beginYourJourney{
+    color: #e9ad1c;
+}
+
+.adoptTeaserText{
+    color: white;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adoptTeaserText button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #15d5f5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.aboutTheCradle{
+    height: 80vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+
+    display: flex;
+}
+
+.aboutTheCradleImage{
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutTheCradleText{
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#theCradle{
+    color: #50bfd7;
+}
+
+#aSanctuary{
+    color: #30004f;
+}
+
+#aboutTheCradleParagraph{
+    color: #676767;
 }
