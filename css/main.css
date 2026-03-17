@@ -48,19 +48,29 @@ h3, h4, h5, h6{
 
 .navLinks a{
     text-decoration: none;
-    color: black;
+    color: #4d4d4d;
     font-weight: 700;
+}
+
+#homeLink{
+    color: #15d5f5;
 }
 
 .hero{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    
+    margin: 100px;
+    color: white;
+}
+
+#heroText{
+    color: #e9ad1c;
 }
 
 .adoptTeaser{
-    height: 100vh;
+    height: 95vh;
     background-color: #002d68;
     background-size: cover;
     background-position: center;
@@ -102,7 +112,7 @@ h3, h4, h5, h6{
 }
 
 .aboutTheCradle{
-    height: 80vh;
+    height: 75vh;
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -139,4 +149,47 @@ h3, h4, h5, h6{
 
 #aboutTheCradleParagraph{
     color: #676767;
+}
+
+.feature{
+    height: 110vh;
+    background-color: #002d68;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+#pastFriends{
+    color: #e9ad1c;
+}
+
+.successCards{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.successCard{
+    padding: 8px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.featureText button{
+     margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #15d5f5;
+    color: white;
+    border: none;
+    border-radius: 8px;
 }
