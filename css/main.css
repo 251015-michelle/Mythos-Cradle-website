@@ -267,16 +267,20 @@ h5{
     background-position: center;
     background-repeat: none;
     color: #676767;
+    margin-left: 50px;
+    margin-right: 10px;
 }
 
 #footerLogo{
-    max-width: 150px;
+    max-width: 300px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .socialMediaLinks img{
-    max-width: 50px;
+    max-width: 80px;
     height: auto;
+    margin: 4px;
 }
 
 .footerDetails{
@@ -289,4 +293,33 @@ h5{
 
     display: flex;
     justify-content: space-between;
+}
+
+#footerCompany{
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+#socialMedia{
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.legal{
+    font-size: 12pt;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#rightsReserved{
+    font-weight: 300;
+}
+
+.policy{
+    display: flex;
+    flex-direction: row;
 }
