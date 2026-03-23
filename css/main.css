@@ -54,10 +54,15 @@ h5{
     margin-top: 40px;
     margin-left: 60px;
     margin-right: 60px;
-    background-color: white;
+    background-color: #fff;
     opacity: 65%;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 40px;
+}
+
+#navbarLogo{
+    max-width: 270px;
+    height: auto;
 }
 
 .navLinks{
@@ -82,7 +87,7 @@ h5{
     align-items: flex-end;
     
     margin: 100px;
-    color: white;
+    color: #fff;
 }
 
 #heroText1{
@@ -130,7 +135,7 @@ h5{
 }
 
 .adoptTeaserText{
-    color: white;
+    color: #fff;
     padding: 20px;
     margin-left: 60px;
     margin-right: 120px;
@@ -144,14 +149,14 @@ h5{
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #15d5f5;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 8px;
 }
 
 .aboutTheCradle{
     height: 75vh;
-    background-color: white;
+    background-color: #fff;
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -198,7 +203,7 @@ h5{
     background-size: cover;
     background-position: center;
     background-repeat: none;
-    color: white;
+    color: #fff;
 
     display: flex;
     flex-direction: column;
@@ -232,7 +237,6 @@ h5{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #successCardImage{
@@ -242,11 +246,16 @@ h5{
 }
 
 #successCardHeading{
-    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #successCardParagraph{
-    margin: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 12pt;
     font-weight: 300;
 }
@@ -255,14 +264,14 @@ h5{
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #15d5f5;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 8px;
 }
 
 .footer{
-    height: 60vh;
-    background-color: white;
+    height: 40vh;
+    background-color: #fff;
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -272,7 +281,7 @@ h5{
 }
 
 #footerLogo{
-    max-width: 300px;
+    max-width: 270px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -286,9 +295,9 @@ h5{
 .footerDetails{
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 14pt;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 12pt;
     font-weight: 300;
 
     display: flex;
@@ -296,19 +305,21 @@ h5{
 }
 
 #footerCompany{
+    font-size: 14pt;
     font-weight: 500;
-    color: #000;
+    color: #2e2e2e;
     margin-bottom: 40px;
 }
 
 #socialMedia{
+    font-size: 14pt;
     font-weight: 500;
-    color: #000;
+    color: #2e2e2e;
     margin-bottom: 20px;
 }
 
 .legal{
-    font-size: 12pt;
+    font-size: 11pt;
 
     display: flex;
     flex-direction: row;
