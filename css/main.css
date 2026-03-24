@@ -44,6 +44,13 @@ h5{
     font-style: normal;
 }
 
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    font-style: normal;
+}
+
 .homeHeader{
     height: 100vh;
     background-image: url(../assets/img/homeHeader.png);
@@ -58,14 +65,14 @@ h5{
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 40px;
+    padding: 10px 40px;
     margin-top: 40px;
     margin-left: 60px;
     margin-right: 60px;
     background-color: #fff;
     opacity: 65%;
     border: 1px solid #fff;
-    border-radius: 40px;
+    border-radius: 35px;
 }
 
 .navbarLogo img{
@@ -155,11 +162,14 @@ h5{
 
 .adoptTeaserText button{
     margin-top: 10px;
-    padding: 10px 20px;
+    margin-left: 0px;
+    margin-right: 270px;
+    padding: 20px 10px;
     background-color: #15d5f5;
     color: #fff;
+    font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .aboutTheCradle{
@@ -206,7 +216,7 @@ h5{
 }
 
 .feature{
-    height: 110vh;
+    height: 115vh;
     background-color: #002d68;
     background-size: cover;
     background-position: center;
@@ -216,6 +226,7 @@ h5{
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 }
 
 #pastFriends{
@@ -268,13 +279,16 @@ h5{
     font-weight: 300;
 }
 
-.featureText button{
-    margin-top: 10px;
-    padding: 10px 20px;
+.feature button{
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 270px;
+    padding: 20px 30px;
     background-color: #15d5f5;
     color: #fff;
+    font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .footer{
@@ -295,7 +309,7 @@ h5{
 }
 
 .socialMediaLinks img{
-    max-width: 80px;
+    max-width: 78px;
     height: auto;
     margin: 4px;
 }
@@ -305,11 +319,19 @@ h5{
     margin-right: 100px;
     margin-top: 70px;
     margin-bottom: 70px;
-    font-size: 12pt;
-    font-weight: 300;
 
     display: flex;
     justify-content: space-between;
+}
+
+.logoWithText p{
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.footerLinks p{
+    font-size: 12pt;
+    font-weight: 300;
 }
 
 #footerCompany{
@@ -327,7 +349,6 @@ h5{
 }
 
 .legal{
-    font-size: 11pt;
     margin-left: 70px;
     margin-right: 140px;
 
@@ -336,7 +357,13 @@ h5{
     justify-content: space-between;
 }
 
+.legal p{
+    font-size: 11pt;
+    font-weight: 300;
+}
+
 #rightsReserved{
+    font-size: 11pt;
     font-weight: 300;
 }
 
@@ -345,7 +372,9 @@ h5{
     flex-direction: row;
 }
 
-
+#tsNcs{
+    margin-right: 30px;
+}
 
 .adoptHeader{
     height: 45vh;
@@ -359,7 +388,11 @@ h5{
     color: #15d5f5;
 }
 
-.adoptHeaderText{
+#contactLink{
+    color: #15d5f5;
+}
+
+.HeaderText{
     color: #fff;
     margin: 50px;
     display: flex;
@@ -405,8 +438,11 @@ h5{
 
 .filterContentLeft{
     margin-left: 100px;
-
     display: flex;
+}
+
+#results{
+    font-size: 12pt;
 }
 
 #filterText{
@@ -446,3 +482,244 @@ h5{
     border-radius: 12px;
 }
 
+.adopt1{
+    height: 95vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: #000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.adopt2{
+    height: 95vh;
+    background-color: #002d68;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.adopt3{
+    height: 95vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: #000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.adopt4{
+    height: 95vh;
+    background-color: #002d68;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.adopt5{
+    height: 95vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: #000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.adopt6{
+    height: 95vh;
+    background-color: #002d68;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.adoptWhite{
+    margin-left: 150px;
+    margin-right: 100px;
+
+    display: flex;
+}
+
+.adoptBlue{
+    margin-left: 150px;
+    margin-right: 100px;
+
+    display: flex;
+}
+
+.adoptImg img{
+    border-radius: 12px;
+}
+
+.adoptDetails{
+    margin-left: 100px;
+}
+
+#creatureName{
+    font-weight: 600;
+    font-size: 33pt;
+}
+
+#priceGrey{
+    color: #9f9f9f;
+    display: flex;
+}
+
+#priceGrey h4{
+    margin-right: 50px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+#priceBlue{
+    color: #15d5f5;
+    display: flex;
+}
+
+#priceBlue h4{
+    margin-right: 50px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.rating{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex
+}
+
+.star{
+  color: #e9ad1c;
+}
+
+.stars{
+    margin-right: 120px;
+}
+
+#review{
+    color: #9f9f9f;
+    font-size: 11pt;
+}
+
+.adoptParagraph{
+    font-size: 12pt;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.counterAndButton{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.counterOrange{
+    background-color: #e9ad1c;
+    color: #fff;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 12px;
+    margin-right: 30px;
+
+    display: flex;
+}
+
+.counterOrange p{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+.counterBlue{
+    background-color: #002d68;
+    color: #fff;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 12px;
+    margin-right: 30px;
+
+    display: flex;
+}
+
+.counterBlue p{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+#counterNumber{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.counterAndButton button{
+    padding: 12px 60px;
+    background-color: #15d5f5;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+}
+
+.package{
+    color: #9f9f9f;
+    display: flex;
+}
+
+.packageLeft{
+    margin-right: 30px;
+}
+
+.packageLeft p{
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.packageMiddel{
+    margin-right: 20px;
+}
+
+.packageMiddel p{
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+.packageRight p{
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+#viewCradleButton{
+    padding: 12px 60px;
+    background-color: #e9ad1c;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+}
