@@ -13,12 +13,12 @@ body{
 
 h1{
     font-family: "TitleFont";
-    font-size: 96pt;
+    font-size: 75pt;
 }
 
 h2{
     font-family: "Metamorphous", serif;
-    font-size: 40pt;
+    font-size: 33pt;
     font-weight: 400;
     font-style: normal;
 }
@@ -26,28 +26,28 @@ h2{
 h3{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 40pt;
+    font-size: 30pt;
     font-style: normal;
 }
 
 h4{
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18pt;
     font-style: normal;
 }
 
 h5{
     font-family: "Metamorphous", serif;
-    font-size: 24pt;
-    font-weight: 400;
+    font-size: 20pt;
+    font-weight: 100;
     font-style: normal;
 }
 
 p{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16pt;
+    font-weight: 300;
+    font-size: 14pt;
     font-style: normal;
 }
 
@@ -57,6 +57,7 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: none;
+    padding-top: 15px;
 }
 
 .navbar{
@@ -65,10 +66,10 @@ p{
     justify-content: space-between;
     align-items: center;
 
-    padding: 10px 40px;
-    margin-top: 40px;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding: 10px 50px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
     background-color: #fff;
     opacity: 65%;
     border: 1px solid #fff;
@@ -89,11 +90,56 @@ p{
 .navLinks a{
     text-decoration: none;
     color: #4d4d4d;
-    font-weight: 700;
+    font-size: 14pt;
+    font-weight: 500;
 }
 
 #homeLink{
     color: #15d5f5;
+}
+
+.searchForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcd8d8;
+    color: #000;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+#magnifyingGlass{
+    color: #8b8b8b;
+    margin-right: 5px;
+}
+
+#searchInput{
+    width: 180px;
+    font-size: 14px;
+    color: #000;
+    border: none;
+    background-color: #dcd8d8;
+}
+
+#searchLineFaded{
+    margin-right: 20px;
+    color: #f2f2f2;
+    font-size: 22pt;
+    font-weight: 300;
+}
+
+.badge{
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    background-color: #15d5f5;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero{
@@ -135,18 +181,18 @@ p{
 
 #beginYourJourney{
     color: #e9ad1c;
-    margin: 0px;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
 .adoptTeaserH1{
     color: #fff;
-    margin: 0px;
+    margin-bottom: 5px;
 }
 
 .adoptTeaserH2{
     color: #fff;
-    margin: 0px;
+    margin-bottom: 20px;
 }
 
 .adoptTeaserText{
@@ -161,7 +207,7 @@ p{
 }
 
 .adoptTeaserText button{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 270px;
     padding: 20px 10px;
@@ -193,7 +239,6 @@ p{
 .aboutTheCradleText{
     padding: 20px;
     margin-left: 150px;
-    margin-right: 140px;
 
     display: flex;
     flex-direction: column;
@@ -202,21 +247,32 @@ p{
 
 #theCradle{
     color: #50bfd7;
-    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 
-#aSanctuary{
+#aSanctuary1{
     color: #30004f;
-    margin: 0px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#aSanctuary2{
+    color: #30004f;
+    margin-bottom: 30px;
 }
 
 #aboutTheCradleParagraph{
     color: #676767;
-    margin: 0px;
+    margin-right: 170px;
+}
+
+.aboutTheCradleImage img{
+    border-radius: 20px;
 }
 
 .feature{
-    height: 115vh;
+    height: 110vh;
     background-color: #002d68;
     background-size: cover;
     background-position: center;
@@ -226,22 +282,28 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+}
+
+.featureText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #pastFriends{
     color: #e9ad1c;
-    margin: 0px;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
 .legendToHome{
     color: #fff;
-    margin: 0px;
+    margin-bottom: 5px;
 }
 
 .successCards{
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 10px;
     margin-left: 110px;
     margin-right: 110px;
@@ -256,6 +318,8 @@ p{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #successCardImage{
@@ -264,24 +328,35 @@ p{
     border-radius: 20px;
 }
 
-#successCardHeading{
+#successCardHeading1{
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#successCardHeading2{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 #successCardParagraph{
     margin-top: 5px;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 300;
 }
 
 .feature button{
-    margin-top: 40px;
-    margin-left: 0px;
+    margin-top: 20px;
+    margin-left: 270px;
     margin-right: 270px;
     padding: 20px 30px;
     background-color: #15d5f5;
@@ -382,6 +457,7 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: none;
+    padding-top: 15px;
 }
 
 #adoptLink{
@@ -595,7 +671,6 @@ p{
 #priceGrey h4{
     margin-right: 50px;
     margin-top: 5px;
-    font-weight: 400;
 }
 
 #priceBlue{
@@ -610,17 +685,25 @@ p{
 }
 
 .rating{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.star{
+.stars i{
   color: #e9ad1c;
 }
 
 .stars{
-    margin-right: 120px;
+    margin-right: 80px;
+}
+
+#devideLineShort{
+    margin-right: 20px;
+    color: #9f9f9f;
+    font-size: 30pt;
+    font-weight: 100;
 }
 
 #review{
@@ -730,6 +813,7 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: none;
+    padding-top: 15px;
 }
 
 .contactAboutMythosCradle{
@@ -776,7 +860,8 @@ p{
 }
 
 .contactInfo p{
-    color: #15d5f5;
+    color: #50bfd7;
+    font-weight: 400;
 }
 
 .contactInfo h3{
