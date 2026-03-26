@@ -70,8 +70,7 @@ p{
     margin-top: 10px;
     margin-left: 70px;
     margin-right: 70px;
-    background-color: #fff;
-    opacity: 65%;
+    background-color: #ffffff72;
     border: 1px solid #fff;
     border-radius: 35px;
 }
@@ -129,6 +128,10 @@ p{
     font-weight: 300;
 }
 
+.searchForm p{
+    margin-bottom: 0;
+}
+
 .badge{
     position: absolute;
     top: 5px;
@@ -145,7 +148,9 @@ p{
 .hero{
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-end;
+    height: 70vh;
     
     margin: 100px;
     color: #fff;
@@ -352,6 +357,7 @@ p{
     margin-right: 20px;
     font-size: 11pt;
     font-weight: 300;
+    text-align: center;
 }
 
 .feature button{
@@ -927,15 +933,7 @@ hr {
     margin-bottom: 15px;
 }
 
-.contactForm input{
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 20px;
-    border-radius: 12px;
-    border-color: #676767;
-}
-
-.contactForm textarea{
+.contactForm input, .contactForm textarea{
     color: #fff;
     margin-bottom: 40px;
     padding: 20px;
