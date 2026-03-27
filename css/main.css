@@ -497,7 +497,7 @@ hr {
 .blurContainer{
     background-color: #ffffff0e;
     backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
-    padding-bottom: 8px;
+    padding-bottom: 25px;
     padding-top: 15px;
 }
 
