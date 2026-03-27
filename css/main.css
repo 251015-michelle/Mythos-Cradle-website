@@ -73,7 +73,7 @@ p{
     background-color: #ffffffae;
     border: none;
     border-radius: 35px;
-    text-align:     ;
+    
 }
 
 .navbarLogo img{
@@ -945,6 +945,8 @@ body {
 
 .flex2Col img{
     border-radius: 20px;
+    max-width: 800px;
+    height: auto;
 }
 
 #contactAbout{
@@ -963,7 +965,7 @@ body {
 }
 
 .contactSection{
-    height: 125vh;
+    height: 110vh;
     background-color: #fff;
     background-size: cover;
     background-position: center;
@@ -976,7 +978,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-top: 55px;
+    margin-top: 50px;
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -1005,7 +1007,9 @@ body {
 
 .contactForm{
     background-image: url(../assets/img/formBackground.png);
+    background-size: 100%;
     padding: 50px;
+    padding-bottom: 70px;
     gap: 10px;
     border-radius: 40px;
     border: none;
@@ -1024,7 +1028,8 @@ body {
 }
 
 .contactForm input, .contactForm textarea{
-    color: #fff;
+    color: #000;
+    font-size: 12pt;
     margin-bottom: 35px;
     padding: 20px;
     border-radius: 12px;
@@ -1039,7 +1044,7 @@ body {
     font-weight: 600;
     border: none;
     border-radius: 12px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .formElement{
@@ -1054,6 +1059,7 @@ body {
     font-size: 12pt;
     font-style: normal;
     color: #9f9f9f;
+    padding-left: 10px;
 }
 
 .formElement textarea::placeholder{
@@ -1062,4 +1068,5 @@ body {
     font-size: 12pt;
     font-style: normal;
     color: #9f9f9f;
+    padding-left: 10px;
 }
