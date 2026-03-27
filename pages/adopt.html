@@ -22,31 +22,34 @@
 <body>
 <header>
     <div class="adoptHeader">
-        <nav class="navbar">
-            <div class="navbarLogo">
-                <img src="../assets/img/logo.png" alt="logo">
-            </div>
-            <div class="navLinks">
-                <a href="../index.html">Home</a>
-                <a id="adoptLink" href="#">Adopt</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="searchBar">
-                <form class="searchForm" id="searchForm">
-                    <i id="magnifyingGlass" class="fa-regular fa-magnifying-glass"></i>
-                    <input type="search" id="searchInput" name="search" placeholder="Search">
-                    <p id="searchLineFaded">|</p>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </form>
-                <div class="searchContainer">
-                    <span class="badge">2</span>
+        <div class="blurContainer">
+            <nav class="navbar">
+                <div class="navbarLogo">
+                    <img src="../assets/img/logo.png" alt="logo">
                 </div>
+                <div class="navLinks">
+                    <a href="../index.html">Home</a>
+                    <a id="adoptLink" href="#">Adopt</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="searchBar">
+                    <form class="searchForm" id="searchForm">
+                        <i id="magnifyingGlass" class="fa-regular fa-magnifying-glass"></i>
+                        <input type="search" id="searchInput" name="search" placeholder="Search">
+                        <p id="searchLineFaded">|</p>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </form>
+                    <div class="searchContainer">
+                        <span class="badge">2</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="HeaderText">
+                <h1>Adopt A Creature</h1>
             </div>
-        </nav>
-        <div class="HeaderText">
-            <h1>Adopt A Creature</h1>
         </div>
-    </div> 
+    </div>
+     
 </header>
 
 
@@ -57,350 +60,357 @@
     </div>
 </section>
 
-
 <section class="filter">
     <div class="filterContentLeft">
+        <i class="fa-solid fa-sliders"></i>
         <p id="filterText">Filter</p>
+        <i class="fa-solid fa-grip"></i>
+        <p id="lineDevider">|</p>
         <p id="results">Showing 1-16 of 32 results</p>
     </div>
     <div class="filterContentRight">
         <p id="show">Show</p>
         <p id="six">6</p>
-        <p id="show">Sort by</p>
+        <p id="sortBy">Sort by</p>
         <p id="sortByDefault">Default</p>
     </div>
 </section>
 
 
-<section class="adopt1">
-    <div class="adoptWhite">
-        <div class="adoptImg">
-            <img src="../assets/img/adopt1.png" alt="adopt1">
-        </div>
-        <div class="adoptDetails">
-            <h3 id="creatureName">Blue Dragon - Azuron</h3>
-            <div id="priceGrey">
-                <h4>R 2 500.00</h4>
-                <h4>R 5 000.00</h4>
-            </div>
-            <div class="rating">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p id="devideLineShort">|</p>
-                <p id="review">Friendly Ally</p>
-            </div>
-            <p class="adoptParagraph">Azuron is a curious little dragon with a spark of mischief in his eyes. He loves exploring hidden nooks and curling up in warm spots after a playful flight, leaving tiny trails of blue sparks wherever he goes. He thrives on attention and gentle play, and his favorite games involve chasing floating spark orbs around the room</p>
-            <div class="counterAndButton">
-                <div class="counterBlue">
-                    <p>-</p>
-                    <p id="counterNumber">1</p>
-                    <p>+</p>
-                </div>
-                <button>Add to Cradle</button>
-            </div>
-            <div class="package">
-                <div class="packageLeft">
-                    <p>Bed</p>
-                    <p>Treats</p>
-                    <p>Toys</p>
-                    <p>Unique Item</p>
-                </div>
-                <div class="packageMiddel">
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                </div>
-                <div class="packageRight">
-                    <p>Cozy lava-foam bed</p>
-                    <p>Frostberry treats</p>
-                    <p>Flame-safe balls, Wing-wrangling hoops, Tiny treasure chests</p>
-                    <p>Mini Fire Orb</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
+<section class="adoptSection">
+    <button id="stickyButton">View Cradle</button>
 
-<section class="adopt2">
-    <div class="adoptBlue">
-        <div class="adoptImg">
-            <img src="../assets/img/adopt2.png" alt="adopt2">
-        </div>
-        <div class="adoptDetails">
-            <h3 id="creatureName">Kitsune - Yuki</h3>
-            <div id="priceBlue">
-                <h4>R 4 500.00</h4>
+    <section class="adopt1">
+        <div class="adoptWhite">
+            <div class="adoptImg">
+                <img src="../assets/img/adopt1.png" alt="adopt1">
             </div>
-            <div class="rating">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+            <div class="adoptDetails">
+                <h3 id="creatureName">Blue Dragon - Azuron</h3>
+                <div id="priceGrey">
+                    <h4>R 2 500.00</h4>
+                    <h4><s>R 5 000.00</s></h4>
                 </div>
-                <p id="devideLineShort">|</p>
-                <p id="review">Gentle Guardian</p>
-            </div>
-            <p class="adoptParagraph">Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas. She delights in playful tricks and quietly watching over her friends, her tails swishing with contentment. Yuki especially enjoys interactive games and hiding small trinkets to surprise her caretakers</p>
-            <div class="counterAndButton">
-                <div class="counterOrange">
-                    <p>-</p>
-                    <p id="counterNumber">1</p>
-                    <p>+</p>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p id="devideLineShort">|</p>
+                    <p id="review">Friendly Ally</p>
                 </div>
-                <button>Add to Cradle</button>
-            </div>
-            <div class="package">
-                <div class="packageLeft">
-                    <p>Bed</p>
-                    <p>Treats</p>
-                    <p>Toys</p>
-                    <p>Unique Item</p>
+                <p class="adoptParagraph">Azuron is a curious little dragon with a spark of mischief in his eyes. He loves exploring hidden nooks and curling up in warm spots after a playful flight, leaving tiny trails of blue sparks wherever he goes. He thrives on attention and gentle play, and his favorite games involve chasing floating spark orbs around the room</p>
+                <div class="counterAndButton">
+                    <div class="counterBlue">
+                        <p>-</p>
+                        <p id="counterNumber">1</p>
+                        <p>+</p>
+                    </div>
+                    <button>Add to Cradle</button>
                 </div>
-                <div class="packageMiddel">
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                </div>
-                <div class="packageRight">
-                    <p>Silk-lined den bed</p>
-                    <p>Moonfruit snacks</p>
-                    <p>Puzzle cubes, Jingling bells, Magical ribbons</p>
-                    <p>Mini Spirit Lantern</p>
+                <hr id="adoptLine">
+                <div class="package">
+                    <div class="packageLeft">
+                        <p>Bed</p>
+                        <p>Treats</p>
+                        <p>Toys</p>
+                        <p>Unique Item</p>
+                    </div>
+                    <div class="packageMiddel">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="packageRight">
+                        <p>Cozy lava-foam bed</p>
+                        <p>Frostberry treats</p>
+                        <p>Flame-safe balls, Wing-wrangling hoops, Tiny treasure chests</p>
+                        <p>Mini Fire Orb</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="adopt3">
-    <div class="adoptWhite">
-        <div class="adoptImg">
-            <img src="../assets/img/adopt3.png" alt="adopt3">
-        </div>
-        <div class="adoptDetails">
-            <h3 id="creatureName">Griffin - Aurelia</h3>
-            <div id="priceGrey">
-                <h4>R 6 500.00</h4>
+    <section class="adopt2">
+        <div class="adoptBlue">
+            <div class="adoptImg">
+                <img src="../assets/img/adopt2.png" alt="adopt2">
             </div>
-            <div class="rating">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+            <div class="adoptDetails">
+                <h3 id="creatureName">Kitsune - Yuki</h3>
+                <div id="priceBlue">
+                    <h4>R 4 500.00</h4>
                 </div>
-                <p id="devideLineShort">|</p>
-                <p id="review">Friendly Ally</p>
-            </div>
-            <p class="adoptParagraph">Aurelia is a proud little griffin, courageous yet gentle. She loves climbing, exploring high perches, and curling up near those she trusts, always watching the world with wise golden eyes. She adores gentle games of chase and loves to show off her tiny but majestic wings.</p>
-            <div class="counterAndButton">
-                <div class="counterBlue">
-                    <p>-</p>
-                    <p id="counterNumber">1</p>
-                    <p>+</p>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p id="devideLineShort">|</p>
+                    <p id="review">Gentle Guardian</p>
                 </div>
-                <button>Add to Cradle</button>
-            </div>
-            <div class="package">
-                <div class="packageLeft">
-                    <p>Bed</p>
-                    <p>Treats</p>
-                    <p>Toys</p>
-                    <p>Unique Item</p>
+                <p class="adoptParagraph">Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas. She delights in playful tricks and quietly watching over her friends, her tails swishing with contentment. Yuki especially enjoys interactive games and hiding small trinkets to surprise her caretakers</p>
+                <div class="counterAndButton">
+                    <div class="counterOrange">
+                        <p>-</p>
+                        <p id="counterNumber">1</p>
+                        <p>+</p>
+                    </div>
+                    <button>Add to Cradle</button>
                 </div>
-                <div class="packageMiddel">
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                </div>
-                <div class="packageRight">
-                    <p>Feather-lined perch bed</p>
-                    <p>Sunfruit treats</p>
-                    <p>Wing rings, Soft talon toys, Mini prey plushies</p>
-                    <p>Tiny Sunstone Perch</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="adopt4">
-    <div class="adoptBlue">
-        <div class="adoptImg">
-            <img src="../assets/img/adopt4.png" alt="adopt4">
-        </div>
-        <div class="adoptDetails">
-            <h3 id="creatureName">Water Wisp - Lumina</h3>
-            <div id="priceBlue">
-                <h4>R 40,000.00</h4>
-            </div>
-            <div class="rating">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p id="devideLineShort">|</p>
-                <p id="review">Beloved Companion</p>
-            </div>
-            <p class="adoptParagraph">Lumina drifts like a shimmer of moonlight, soft and gentle. Playful and curious, she glides through her surroundings, bringing calm and quiet magic wherever she goes. She loves to follow gentle ripples in water or light games, leaving a faint glowing trail that enchants everyone nearby.</p>
-            <div class="counterAndButton">
-                <div class="counterOrange">
-                    <p>-</p>
-                    <p id="counterNumber">1</p>
-                    <p>+</p>
-                </div>
-                <button>Add to Cradle</button>
-            </div>
-            <div class="package">
-                <div class="packageLeft">
-                    <p>Bed</p>
-                    <p>Treats</p>
-                    <p>Toys</p>
-                    <p>Unique Item</p>
-                </div>
-                <div class="packageMiddel">
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                </div>
-                <div class="packageRight">
-                    <p>Crystal bowl bed</p>
-                    <p>Dewdrop nectar</p>
-                    <p>Floating orbs, Ripple rings, Water bell</p>
-                    <p>Mini Waterfall Sphere</p>
+                <hr id="adoptLine">
+                <div class="package">
+                    <div class="packageLeft">
+                        <p>Bed</p>
+                        <p>Treats</p>
+                        <p>Toys</p>
+                        <p>Unique Item</p>
+                    </div>
+                    <div class="packageMiddel">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="packageRight">
+                        <p>Silk-lined den bed</p>
+                        <p>Moonfruit snacks</p>
+                        <p>Puzzle cubes, Jingling bells, Magical ribbons</p>
+                        <p>Mini Spirit Lantern</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="adopt5">
-    <div class="adoptWhite">
-        <div class="adoptImg">
-            <img src="../assets/img/adopt5.png" alt="adopt5">
-        </div>
-        <div class="adoptDetails">
-            <h3 id="creatureName">Pegasus - Starwind</h3>
-            <div id="priceGrey">
-                <h4>R 5 000.00</h4>
+    <section class="adopt3">
+        <div class="adoptWhite">
+            <div class="adoptImg">
+                <img src="../assets/img/adopt3.png" alt="adopt3">
             </div>
-            <div class="rating">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+            <div class="adoptDetails">
+                <h3 id="creatureName">Griffin - Aurelia</h3>
+                <div id="priceGrey">
+                    <h4>R 6 500.00</h4>
                 </div>
-                <p id="devideLineShort">|</p>
-                <p id="review">Gentle Guardian</p>
-            </div>
-            <p class="adoptParagraph">Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves short flights and sunny naps, his gleaming wings always ready for discovery. He enjoys small games of chase and nuzzles to show affection, quickly forming strong bonds with those he trusts.</p>
-            <div class="counterAndButton">
-                <div class="counterBlue">
-                    <p>-</p>
-                    <p id="counterNumber">1</p>
-                    <p>+</p>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p id="devideLineShort">|</p>
+                    <p id="review">Friendly Ally</p>
                 </div>
-                <button>Add to Cradle</button>
-            </div>
-            <div class="package">
-                <div class="packageLeft">
-                    <p>Bed</p>
-                    <p>Treats</p>
-                    <p>Toys</p>
-                    <p>Unique Item</p>
+                <p class="adoptParagraph">Aurelia is a proud little griffin, courageous yet gentle. She loves climbing, exploring high perches, and curling up near those she trusts, always watching the world with wise golden eyes. She adores gentle games of chase and loves to show off her tiny but majestic wings.</p>
+                <div class="counterAndButton">
+                    <div class="counterBlue">
+                        <p>-</p>
+                        <p id="counterNumber">1</p>
+                        <p>+</p>
+                    </div>
+                    <button>Add to Cradle</button>
                 </div>
-                <div class="packageMiddel">
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                </div>
-                <div class="packageRight">
-                    <p>Soft cloud bed</p>
-                    <p>Starhay treats</p>
-                    <p>Flying hoops, Feathered balls, Small riding saddle</p>
-                    <p>Mini Wind Hoof Ball</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="adopt6">
-    <div class="adoptBlue">
-        <div class="adoptImg">
-            <img src="../assets/img/adopt6.png" alt="adopt6">
-        </div>
-        <div class="adoptDetails">
-            <h3 id="creatureName">Forest Spirit - Briar</h3>
-            <div id="priceBlue">
-                <h4>R 3 500.00</h4>
-            </div>
-            <div class="rating">
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p id="devideLineShort">|</p>
-                <p id="review">Beloved Companion</p>
-            </div>
-            <p class="adoptParagraph">Briar is a tiny guardian of the woods, curious, gentle, and full of life. He loves leafy hideaways and quietly exploring gardens, always humming with a touch of magic. He enjoys collecting small natural treasures and bringing them to his caretakers as gifts, showing his playful personality.</p>
-            <div class="counterAndButton">
-                <div class="counterOrange">
-                    <p>-</p>
-                    <p id="counterNumber">1</p>
-                    <p>+</p>
-                </div>
-                <button>Add to Cradle</button>
-            </div>
-            <div class="package">
-                <div class="packageLeft">
-                    <p>Bed</p>
-                    <p>Treats</p>
-                    <p>Toys</p>
-                    <p>Unique Item</p>
-                </div>
-                <div class="packageMiddel">
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                </div>
-                <div class="packageRight">
-                    <p>Mossy bed</p>
-                    <p>Berry treats</p>
-                    <p>Twig rattles, Leaf dolls, Acorn balls</p>
-                    <p>Mini Leafy Hideout</p>
+                <hr id="adoptLine">
+                <div class="package">
+                    <div class="packageLeft">
+                        <p>Bed</p>
+                        <p>Treats</p>
+                        <p>Toys</p>
+                        <p>Unique Item</p>
+                    </div>
+                    <div class="packageMiddel">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="packageRight">
+                        <p>Feather-lined perch bed</p>
+                        <p>Sunfruit treats</p>
+                        <p>Wing rings, Soft talon toys, Mini prey plushies</p>
+                        <p>Tiny Sunstone Perch</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
+    <section class="adopt4">
+        <div class="adoptBlue">
+            <div class="adoptImg">
+                <img src="../assets/img/adopt4.png" alt="adopt4">
+            </div>
+            <div class="adoptDetails">
+                <h3 id="creatureName">Water Wisp - Lumina</h3>
+                <div id="priceBlue">
+                    <h4>R 40,000.00</h4>
+                </div>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p id="devideLineShort">|</p>
+                    <p id="review">Beloved Companion</p>
+                </div>
+                <p class="adoptParagraph">Lumina drifts like a shimmer of moonlight, soft and gentle. Playful and curious, she glides through her surroundings, bringing calm and quiet magic wherever she goes. She loves to follow gentle ripples in water or light games, leaving a faint glowing trail that enchants everyone nearby.</p>
+                <div class="counterAndButton">
+                    <div class="counterOrange">
+                        <p>-</p>
+                        <p id="counterNumber">1</p>
+                        <p>+</p>
+                    </div>
+                    <button>Add to Cradle</button>
+                </div>
+                <hr id="adoptLine">
+                <div class="package">
+                    <div class="packageLeft">
+                        <p>Bed</p>
+                        <p>Treats</p>
+                        <p>Toys</p>
+                        <p>Unique Item</p>
+                    </div>
+                    <div class="packageMiddel">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="packageRight">
+                        <p>Crystal bowl bed</p>
+                        <p>Dewdrop nectar</p>
+                        <p>Floating orbs, Ripple rings, Water bell</p>
+                        <p>Mini Waterfall Sphere</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <button id="viewCradleButton">View Cradle</button>
+
+    <section class="adopt5">
+        <div class="adoptWhite">
+            <div class="adoptImg">
+                <img src="../assets/img/adopt5.png" alt="adopt5">
+            </div>
+            <div class="adoptDetails">
+                <h3 id="creatureName">Pegasus - Starwind</h3>
+                <div id="priceGrey">
+                    <h4>R 5 000.00</h4>
+                </div>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p id="devideLineShort">|</p>
+                    <p id="review">Gentle Guardian</p>
+                </div>
+                <p class="adoptParagraph">Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves short flights and sunny naps, his gleaming wings always ready for discovery. He enjoys small games of chase and nuzzles to show affection, quickly forming strong bonds with those he trusts.</p>
+                <div class="counterAndButton">
+                    <div class="counterBlue">
+                        <p>-</p>
+                        <p id="counterNumber">1</p>
+                        <p>+</p>
+                    </div>
+                    <button>Add to Cradle</button>
+                </div>
+                <hr id="adoptLine">
+                <div class="package">
+                    <div class="packageLeft">
+                        <p>Bed</p>
+                        <p>Treats</p>
+                        <p>Toys</p>
+                        <p>Unique Item</p>
+                    </div>
+                    <div class="packageMiddel">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="packageRight">
+                        <p>Soft cloud bed</p>
+                        <p>Starhay treats</p>
+                        <p>Flying hoops, Feathered balls, Small riding saddle</p>
+                        <p>Mini Wind Hoof Ball</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    
+    <section class="adopt6">
+        <div class="adoptBlue">
+            <div class="adoptImg">
+                <img src="../assets/img/adopt6.png" alt="adopt6">
+            </div>
+            <div class="adoptDetails">
+                <h3 id="creatureName">Forest Spirit - Briar</h3>
+                <div id="priceBlue">
+                    <h4>R 3 500.00</h4>
+                </div>
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p id="devideLineShort">|</p>
+                    <p id="review">Beloved Companion</p>
+                </div>
+                <p class="adoptParagraph">Briar is a tiny guardian of the woods, curious, gentle, and full of life. He loves leafy hideaways and quietly exploring gardens, always humming with a touch of magic. He enjoys collecting small natural treasures and bringing them to his caretakers as gifts, showing his playful personality.</p>
+                <div class="counterAndButton">
+                    <div class="counterOrange">
+                        <p>-</p>
+                        <p id="counterNumber">1</p>
+                        <p>+</p>
+                    </div>
+                    <button>Add to Cradle</button>
+                </div>
+                <hr id="adoptLine">
+                <div class="package">
+                    <div class="packageLeft">
+                        <p>Bed</p>
+                        <p>Treats</p>
+                        <p>Toys</p>
+                        <p>Unique Item</p>
+                    </div>
+                    <div class="packageMiddel">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="packageRight">
+                        <p>Mossy bed</p>
+                        <p>Berry treats</p>
+                        <p>Twig rattles, Leaf dolls, Acorn balls</p>
+                        <p>Mini Leafy Hideout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </section>
 
 
