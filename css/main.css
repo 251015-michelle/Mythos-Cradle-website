@@ -379,6 +379,8 @@ p{
     border-radius: 12px;
 }
 
+
+
 .footer{
     height: 38vh;
     background-color: #fff;
@@ -485,6 +487,8 @@ hr {
 #pNp{
     font-weight: 400;
 }
+
+
 
 .adoptHeader{
     height: 45vh;
@@ -838,7 +842,7 @@ body {
 .counterOrange{
     background-color: #e9ad1c;
     color: #fff;
-    padding: 12px 5px;
+    padding: 10px 0px;
     border: none;
     border-radius: 12px;
     margin-right: 30px;
@@ -847,16 +851,10 @@ body {
     align-items: center;
 }
 
-.counterOrange p{
-    margin: 10px;
-    font-weight: 600;
-    font-size: 14pt;
-}
-
 .counterBlue{
     background-color: #002d68;
     color: #fff;
-    padding: 12px 5px;
+    padding: 10px 0px;
     border: none;
     border-radius: 12px;
     margin-right: 30px;
@@ -869,42 +867,32 @@ body {
     margin: 10px;
     font-weight: 600;
     font-size: 14pt;
-    padding: 5px 10px;
+    padding: 3px 10px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 14pt;
-    font-style: normal;
+    background-color: #002d6800;
+    color: #fff;
+    border: none;
 }
 
 #increment{
     margin: 10px;
     font-weight: 600;
     font-size: 14pt;
-    padding: 5px 10px;
+    padding: 3px 10px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 14pt;
-    font-style: normal;
+    background-color: #002d6800;
+    color: #fff;
+    border: none;
 }
 
 #counterNumber{
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 14pt;
-    font-style: normal;
+    font-weight: 600;
 }
-
-
-
-
-
-
-
 
 #addButton{
     padding: 12px 60px;
@@ -950,6 +938,7 @@ body {
     font-size: 12pt;
     font-weight: 300;
 }
+
 
 
 .contactHeader{
