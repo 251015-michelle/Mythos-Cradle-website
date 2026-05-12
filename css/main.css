@@ -844,6 +844,7 @@ body {
     margin-right: 30px;
 
     display: flex;
+    align-items: center;
 }
 
 .counterOrange p{
@@ -861,20 +862,51 @@ body {
     margin-right: 30px;
 
     display: flex;
+    align-items: center;
 }
 
-.counterBlue p{
+#decrement{
     margin: 10px;
     font-weight: 600;
     font-size: 14pt;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    font-style: normal;
+}
+
+#increment{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 14pt;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    font-style: normal;
 }
 
 #counterNumber{
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    font-style: normal;
 }
 
-.counterAndButton button{
+
+
+
+
+
+
+
+#addButton{
     padding: 12px 60px;
     background-color: #15d5f5;
     color: #fff;
@@ -918,6 +950,7 @@ body {
     font-size: 12pt;
     font-weight: 300;
 }
+
 
 .contactHeader{
     height: 45vh;
@@ -1069,4 +1102,23 @@ body {
     font-style: normal;
     color: #9f9f9f;
     padding-left: 10px;
+}
+
+
+
+.cradleHeader{
+    height: 45vh;
+    background-image: url(../assets/img/cradleHeader.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    padding-top: 15px;
+}
+
+a i{
+  color: #000;
+}
+
+#cradleLink{
+    color: #15d5f5;
 }
