@@ -52,61 +52,77 @@
 </header>
 
 
-<section class="cradleItems">
-    <div class="creaturesToBuy">
-        <h3>Your Creatures</h3>
-        <hr id="cradleHeadingLine">
-        <div class="creatureImg">
-            <img src="../assets/img/adopt1.png">
-        </div>
-        <div class="creatureInfo">
-            <p class="nameOfCreature">Blue Dragon - Azuron</p>
-            <p class="price">R2500.00</p>
-            <p class="starterPack">Includes the starter pack</p>
-            <div class="cradleCounter">
-                <button id="cradleDecrement">-</button>
-                <span id="cradleCounterNumber">1</span>
-                <button id="CradleIncrement">+</button>
+<section class="cradleItemsSection">
+    <h4>Your Creatures</h4>
+    <hr class="cradleThickLine" id="cradleHeadingLine">
+    <div class="cradleItems">
+        <div class="creaturesToBuy">
+            <div class="creatureInfoLayout">
+                <div class="creatureImg">
+                    <img src="../assets/img/adopt1.png">
+                </div>
+                <div class="creatureInfo">
+                    <div class="creatureInfoDetails">
+                        <p class="nameOfCreature">Blue Dragon - Azuron</p>
+                        <p class="price">R2500.00</p>
+                        <p class="starterPack">Includes the starter pack</p>
+                        <div class="cradleCounter">
+                            <button id="cradleDecrement">-</button>
+                            <span id="cradleCounterNumber">1</span>
+                            <button id="cradleIncrement">+</button>
+                        </div>
+                    </div>
+                    <div class="creatureInfoDelete"> 
+                        <div class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div> 
+                </div>
             </div>
-            <div class="delete">
-                <i class="fa-solid fa-trash-can"></i>
-            </div>
-        </div>
-        <hr id="cradleItemEndLine">
 
-        <div class="creatureImg">
-            <img src="../assets/img/adopt6.png">
-        </div>
-        <div class="creatureInfo">
-            <p class="nameOfCreature">Forest Spirit - Briar</p>
-            <p class="price">R3500.00</p>
-            <p class="starterPack">Includes the starter pack</p>
-            <div class="cradleCounter">
-                <button id="cradleDecrement">-</button>
-                <span id="cradleCounterNumber">1</span>
-                <button id="CradleIncrement">+</button>
+            <hr id="cradleItemEndLine">
+            
+            <div class="creatureInfoLayout">
+                <div class="creatureImg">
+                    <img src="../assets/img/adopt6.png">
+                </div>
+                <div class="creatureInfo">
+                    <div class="creatureInfoDetails">
+                        <p class="nameOfCreature">Forest Spirit - Briar</p>
+                        <p class="price">R3500.00</p>
+                        <p class="starterPack">Includes the starter pack</p>
+                        <div class="cradleCounter">
+                            <button id="cradleDecrement">-</button>
+                            <span id="cradleCounterNumber">1</span>
+                            <button id="cradleIncrement">+</button>
+                        </div>
+                    </div>
+                    <div class="creatureInfoDelete"> 
+                        <div class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div> 
+                </div>
             </div>
-            <div class="delete">
-                <i class="fa-solid fa-trash-can"></i>
-            </div>
         </div>
-        <hr id="cradleItemEndLine">
-
-        <div class="total">
-            <hr id="totalLine">
+        
+        <div class="orderSummary">
+            <h4>Order summary</h4>
+            <p>2 Items</p>
+            <p>discount code</p>
+            <p>TOTAL COST: R6000.00</p>
+            <p>so iets, maar verander dit!</p>
+        </div>
+    </div>
+    
+    <div class="total">
+        <hr class="cradleThickLine" id="totalTopLine">
+        <div class="totalInfo">
             <p id="totalWord">TOTAL:</p>
             <p id="totalAmount">R6000.00</p>
-            <hr id="totalLine">
         </div>
+        <hr class="cradleThickLine" id="totalBottomLine">
     </div>
-    <div class="paymentForm">
-        <p>Order summary</p>
-        <p>2 Items</p>
-        <p>discount code</p>
-        <p>TOTAL COST: R6000.00</p>
-        <p>so iets, maar verander dit!</p>
-    </div>
-
 
 </section>
 

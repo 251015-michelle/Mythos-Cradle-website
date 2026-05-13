@@ -500,8 +500,8 @@ hr {
 
 .blurContainer{
     background-color: #ffffff0e;
-    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
-    padding-bottom: 25px;
+    backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px);
+    padding-bottom: 8px;
     padding-top: 15px;
 }
 
@@ -1110,4 +1110,144 @@ a i{
 
 #cradleLink{
     color: #15d5f5;
+}
+
+.cradleItemsSection h4{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+.cradleThickLine{
+    background-color: #000;
+    border: none;
+    height: 1.5px;
+}
+
+#cradleHeadingLine{
+    width: 88%;
+    margin-right: 100px;
+}
+
+#totalTopLine{
+    width: 96%;
+    margin-left: auto;
+    margin-right: 88px;
+    margin-bottom: 15px;
+}
+
+#totalBottomLine{
+    width: 96%;
+    margin-left: auto;
+    margin-right: 88px;
+    margin-top: 15px;
+}
+
+#cradleItemEndLine{
+    background-color: #9f9f9f;
+    border: none;
+    height: 1.5px;
+    width: 105%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cradleItems{
+    margin: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.creatureInfoLayout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.creatureImg img{
+    width: 35%;
+    height: auto;
+}
+
+.creatureInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.nameOfCreature{
+    font-weight: 400;
+}
+
+.cradleCounter{
+    background-color: #002d68;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    margin-right: 133px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#cradleDecrement{
+    margin: 0px 10px;
+    font-weight: 500;
+    font-size: 14pt;
+    padding: 0px 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background-color: #002d6800;
+    color: #fff;
+    border: none;
+}
+
+#cradleIncrement{
+    margin: 8px 10px;
+    font-weight: 500;
+    font-size: 14pt;
+    padding: 0px 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background-color: #002d6800;
+    color: #fff;
+    border: none;
+}
+
+#cradleCounterNumber{
+    margin: 0px 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.delete i{
+    padding-left: 100px;
+}
+
+.orderSummary{
+    border: 2px solid #000;
+    padding: 50px;
+}
+
+.total{
+    margin-left: 120px;
+}
+
+.totalInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#totalWord{
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
+}
+
+#totalAmount{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px;
 }
