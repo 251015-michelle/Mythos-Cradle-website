@@ -851,7 +851,7 @@ body {
     align-items: center;
 }
 
-.counterBlue{
+#counterBlue{
     background-color: #002d68;
     color: #fff;
     padding: 10px 0px;
@@ -863,7 +863,7 @@ body {
     align-items: center;
 }
 
-#decrement{
+.decrement{
     margin: 10px;
     font-weight: 600;
     font-size: 14pt;
@@ -875,7 +875,7 @@ body {
     border: none;
 }
 
-#increment{
+.increment{
     margin: 10px;
     font-weight: 600;
     font-size: 14pt;
@@ -887,9 +887,14 @@ body {
     border: none;
 }
 
-#counterNumber{
-    margin-left: 20px;
-    margin-right: 20px;
+.counterNumber{
+    background: none;
+    color: #fff;
+    width: 20px;
+    border: none;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
     font-weight: 600;
 }

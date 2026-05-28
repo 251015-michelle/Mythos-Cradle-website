@@ -1,15 +1,29 @@
-const countElement = document.getElementById('counterNumber');
-const incrementBtn = document.getElementById('increment');
-const decrementBtn = document.getElementById('decrement');
+// Select all counter containers on the page
+const counterContainers = document.querySelectorAll('.counterContainer');
 
-let count = 1;
+counterContainers.forEach(container => {
+  // Isolate elements within the current container
+  const decrementBtn = container.querySelector('.decrement');
+  const incrementBtn = container.querySelector('.increment');
+  const input = container.querySelector('.counterNumber');
 
-incrementBtn.addEventListener('click', () => {
-    count++;
-    countElement.innerText = count;
-});
+  // Handle Increment
+  incrementBtn.addEventListener('click', () => {
+    let currentValue = parseInt(input.value) || 1;
+    const max = parseInt(input.getAttribute('max')) || 5;
 
-decrementBtn.addEventListener('click', () => {
-    count--;
-    countElement.innerText = count;
+    if (currentValue < max) {
+        input.value = currentValue + 1;
+    }
+  });
+
+  // Handle Decrement (prevents going below zero if a min is set)
+  decrementBtn.addEventListener('click', () => {
+    let currentValue = parseInt(input.value) || 1;
+    const min = parseInt(input.getAttribute('min')) || 1;
+    
+    if (currentValue > min) {
+        input.value = currentValue - 1;
+    }
+  });
 });
