@@ -1063,7 +1063,7 @@ body {
     border: none;
 }
 
-.contactForm button{
+#submitBtn{
     padding: 20px 70px;
     background-color: #15d5f5;
     color: #fff;
