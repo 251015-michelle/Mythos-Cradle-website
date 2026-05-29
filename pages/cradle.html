@@ -66,10 +66,10 @@
                         <p class="nameOfCreature">Blue Dragon - Azuron</p>
                         <p class="price">R2500.00</p>
                         <p class="starterPack">Includes the starter pack</p>
-                        <div class="cradleCounter">
-                            <button id="cradleDecrement">-</button>
-                            <span id="cradleCounterNumber">1</span>
-                            <button id="cradleIncrement">+</button>
+                        <div class="counterContainer" id="cradleCounter">
+                            <button class="decrement">-</button>
+                            <input type="text" inputmode="numeric" class="counterNumber" value="1" min="1" max="5" readonly>
+                            <button class="increment">+</button>
                         </div>
                     </div>
                     <div class="creatureInfoDelete"> 
@@ -91,10 +91,10 @@
                         <p class="nameOfCreature">Forest Spirit - Briar</p>
                         <p class="price">R3500.00</p>
                         <p class="starterPack">Includes the starter pack</p>
-                        <div class="cradleCounter">
-                            <button id="cradleDecrement">-</button>
-                            <span id="cradleCounterNumber">1</span>
-                            <button id="cradleIncrement">+</button>
+                        <div class="counterContainer" id="cradleCounter">
+                            <button class="decrement">-</button>
+                            <input type="text" inputmode="numeric" class="counterNumber" value="1" min="1" max="5" readonly>
+                            <button class="increment">+</button>
                         </div>
                     </div>
                     <div class="creatureInfoDelete"> 
@@ -107,11 +107,15 @@
         </div>
         
         <div class="orderSummary">
-            <h4>Order summary</h4>
-            <p>2 Items</p>
+            <h4>ORDER SUMMARY</h4>
+            <p id="totalItems">2 Items</p>
             <p>discount code</p>
             <p>TOTAL COST: R6000.00</p>
             <p>so iets, maar verander dit!</p>
+            <div class="optionBTNs">
+                <button class="cradleOptionBtn">Continue Searching</button>
+                <button class="cradleOptionBtn" id="finishAdoptionBtn">Finish Adoption</button>
+            </div>
         </div>
     </div>
     
@@ -123,6 +127,7 @@
         </div>
         <hr class="cradleThickLine" id="totalBottomLine">
     </div>
+
 
 </section>
 
