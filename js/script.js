@@ -87,9 +87,6 @@ function getFormInfo(event) {
 
 
 
-
-
-
 //option 3 for thank you message
 //saves HTML elements in variables so that we can access them easily in JavaScript
 let contactForm = document.getElementById("contactForm");
@@ -147,7 +144,7 @@ let addInfo = (event)=>{
     taskInput.value = "";
 };
 
-//declare display welcome message
+//declare display thank you message
 let displayThankYouMessage = (currentUsername) => {
     thankYouMessage.innerHTML = `
     Thank you, ${currentUsername}, for your message!
@@ -176,9 +173,14 @@ window.addEventListener("DOMContentLoaded", loadInfo);
 
 
 
+
+
+
+
+
 //adding items to the cart
 // Load existing cart from localStorage on page load, or start empty
-let cart = JSON.parse(localStorage.getItem('cradleContainer')) || [];
+let cart = JSON.parse(localStorage.getItem('cradleItems')) || [];
 
 // Initial UI render on page load
 updateCartUI();
@@ -186,27 +188,29 @@ updateCartUI();
 // Event listener for add-to-cart buttons
 document.querySelectorAll('.addButton').forEach(button => {
   button.addEventListener('click', (event) => {
-    const product = {
+    const creature = {
       id: event.target.getAttribute('data-id'),
       name: event.target.getAttribute('data-name'),
       price: parseFloat(event.target.getAttribute('data-price')),
       quantity: 1
     };
-    addItemToCart(product);
+    addItemToCart(creature);
   });
 });
+// Moes ek nie hier die HTML insit om dit te kan wys nie?
 
-function addItemToCart(newProduct) {
-  const existingProduct = cart.find(item => item.id === newProduct.id);
+function addItemToCart(newCreature) {
+  const existingCreature = cart.find(item => item.id === newCreature.id);
   
-  if (existingProduct) {
-    existingProduct.quantity += 1;
+  if (existingCreature) {
+    existingCreature.quantity += 1;
   } else {
-    cart.push(newProduct);
+    cart.push(newCreature);
   }
+  //moet ek nie hierdie =+ 1 laat reflect in my input counter nie? Hoe doen ek dit??
   
   // Save updated array to localStorage as a string string
-  localStorage.setItem('cradleContainer', JSON.stringify(cart));
+  localStorage.setItem('cradleItems', JSON.stringify(cart));
   
   updateCartUI();
 }
@@ -222,9 +226,6 @@ function updateCartUI() {
   
   cart.forEach(item => {
     const listItem = document.createElement('li');
-    
-
-
     
     //delete dalk hierdie...
     listItem.textContent = `${item.name} x ${item.quantity} - R${item.price * item.quantity}`;
@@ -256,3 +257,42 @@ async function checkoutCart() {
     console.error('Checkout failed:', error);
   }
 }
+
+
+
+
+
+
+//creating a functional search bar
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Stops the page from refreshing
+  
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  
+  if (query) {
+    window.location.href = `adoption.html?search=${encodeURIComponent(query)}`;
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Get the search term from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchTerm = urlParams.get('search');
+
+  if (searchTerm) {
+    // 2. Find the animal element on the page (matches an id or data attribute)
+    const targetAnimal = document.getElementById(searchTerm) || 
+                         document.querySelector(`[data-name="${searchTerm}"]`);
+
+    if (targetAnimal) {
+      // 3. Smoothly scroll the user to the specific animal
+      targetAnimal.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // Optional: Add a temporary highlight class for visual feedback
+      targetAnimal.classList.add('highlighted-pet');
+    } else {
+      console.log("Animal not found on this page.");
+    }
+  }
+});
+

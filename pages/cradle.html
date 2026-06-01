@@ -34,10 +34,10 @@
             <div class="searchBar">
                 <form class="searchForm" id="searchForm">
                     <i id="magnifyingGlass" class="fa-regular fa-magnifying-glass"></i>
-                    <input type="search" id="searchInput" name="search" placeholder="Search">
+                    <input type="text" id="searchInput" placeholder="Search" required>
                     <p id="searchLineFaded">|</p>
-                    <a href="#">
-                        <i id="cradleLink" class="fa-solid fa-basket-shopping"></i>
+                    <a href="pages/cradle.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
                     </a>
                 </form>
                 <div class="searchContainer">
@@ -70,6 +70,79 @@
             </div>
         </div>
     </div>
+
+    
+    
+    
+    
+<!-- hoe we wil he dit moet lyk -->    
+    <div class="creaturesToBuy">
+            <div class="creatureInfoLayout">
+                <div class="creatureImg">
+                    <img src="../assets/img/adopt1.png">
+                </div>
+                <div class="creatureInfo">
+                    <div class="creatureInfoDetails">
+                        <p class="nameOfCreature">Blue Dragon - Azuron</p>
+                        <p class="price">R2500.00</p>
+                        <p class="starterPack">Includes the starter pack</p>
+                        <div class="counterContainer" id="cradleCounter">
+                            <button class="decrement">-</button>
+                            <input type="text" inputmode="numeric" class="counterNumber" value="1" min="1" max="5" readonly>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="creatureInfoDelete"> 
+                        <div class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <hr id="cradleItemEndLine">
+            
+            <div class="creatureInfoLayout">
+                <div class="creatureImg">
+                    <img src="../assets/img/adopt6.png">
+                </div>
+                <div class="creatureInfo">
+                    <div class="creatureInfoDetails">
+                        <p class="nameOfCreature">Forest Spirit - Briar</p>
+                        <p class="price">R3500.00</p>
+                        <p class="starterPack">Includes the starter pack</p>
+                        <div class="counterContainer" id="cradleCounter">
+                            <button class="decrement">-</button>
+                            <input type="text" inputmode="numeric" class="counterNumber" value="1" min="1" max="5" readonly>
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="creatureInfoDelete"> 
+                        <div class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    
+    <div class="total">
+        <hr class="cradleThickLine" id="totalTopLine">
+        <div class="totalInfo">
+            <p id="totalAmount">TOTAL:</p>
+            <p id="totalAmount">R6000.00</p>
+        </div>
+        <hr class="cradleThickLine" id="totalBottomLine">
+    </div>
+<!-- hoe we wil he dit moet lyk --> 
+
+
+
+
+
+
+
+
     
     <div class="total">
         <hr class="cradleThickLine" id="totalTopLine">

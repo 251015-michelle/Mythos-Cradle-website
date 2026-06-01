@@ -183,12 +183,23 @@ p{
     display: flex;
 }
 
-.adoptTeaserImage{
+#adoptTeaserCarousel{
     margin-left: 120px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.carousel-item {
+  width: 600px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 #beginYourJourney{

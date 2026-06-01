@@ -34,7 +34,7 @@
             <div class="searchBar">
                 <form class="searchForm" id="searchForm">
                     <i id="magnifyingGlass" class="fa-regular fa-magnifying-glass"></i>
-                    <input type="search" id="searchInput" name="search" placeholder="Search">
+                    <input type="text" id="searchInput" placeholder="Search" required>
                     <p id="searchLineFaded">|</p>
                     <a href="pages/cradle.html">
                         <i class="fa-solid fa-basket-shopping"></i>
@@ -55,9 +55,39 @@
   
 
 <section class="adoptTeaser">
-    <div class="adoptTeaserImage">
-        <img src="assets/img/imageSlider1.png" alt="adoptTeaserImage">
-    </div>
+    <div id="adoptTeaserCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/imageSlider1.png" class="d-block w-100" alt="imageSlider1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/imageSlider3.png" class="d-block w-100" alt="imageSlider2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/imageSlider2.png" class="d-block w-100" alt="imageSlider3">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/imageSlider4.png" class="d-block w-100" alt="imageSlider4">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/imageSlider5.png" class="d-block w-100" alt="imageSlider5">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/imageSlider6.png" class="d-block w-100" alt="imageSlider6">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+
+
     <div class="adoptTeaserText">
         <p id="beginYourJourney">BEGIN YOUR JOURNEY</p>
         <h3 class="adoptTeaserH1">Tiny Legends</h3>
@@ -155,7 +185,9 @@
     </div>
 </footer>
 
+
 <script src="https://kit.fontawesome.com/eac5ca7781.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
