@@ -52,59 +52,11 @@
 </header>
 
 
-<section class="cradleItemsSection">
+<section class="cradleContainer">
     <h4>Your Creatures</h4>
     <hr class="cradleThickLine" id="cradleHeadingLine">
     <div class="cradleItems">
-        <div class="creaturesToBuy">
-            <div class="creatureInfoLayout">
-                <div class="creatureImg">
-                    <img src="../assets/img/adopt1.png">
-                </div>
-                <div class="creatureInfo">
-                    <div class="creatureInfoDetails">
-                        <p class="nameOfCreature">Blue Dragon - Azuron</p>
-                        <p class="price">R2500.00</p>
-                        <p class="starterPack">Includes the starter pack</p>
-                        <div class="counterContainer" id="cradleCounter">
-                            <button class="decrement">-</button>
-                            <input type="text" inputmode="numeric" class="counterNumber" value="1" min="1" max="5" readonly>
-                            <button class="increment">+</button>
-                        </div>
-                    </div>
-                    <div class="creatureInfoDelete"> 
-                        <div class="delete">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-
-            <hr id="cradleItemEndLine">
-            
-            <div class="creatureInfoLayout">
-                <div class="creatureImg">
-                    <img src="../assets/img/adopt6.png">
-                </div>
-                <div class="creatureInfo">
-                    <div class="creatureInfoDetails">
-                        <p class="nameOfCreature">Forest Spirit - Briar</p>
-                        <p class="price">R3500.00</p>
-                        <p class="starterPack">Includes the starter pack</p>
-                        <div class="counterContainer" id="cradleCounter">
-                            <button class="decrement">-</button>
-                            <input type="text" inputmode="numeric" class="counterNumber" value="1" min="1" max="5" readonly>
-                            <button class="increment">+</button>
-                        </div>
-                    </div>
-                    <div class="creatureInfoDelete"> 
-                        <div class="delete">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
+        <ul id="cartItemsList"><!-- JavaScript will inject items here --></ul>
         
         <div class="orderSummary">
             <h4>ORDER SUMMARY</h4>
@@ -122,8 +74,7 @@
     <div class="total">
         <hr class="cradleThickLine" id="totalTopLine">
         <div class="totalInfo">
-            <p id="totalWord">TOTAL:</p>
-            <p id="totalAmount">R6000.00</p>
+            <p>Total: R<span id="cartTotalPrice">0</span></p>
         </div>
         <hr class="cradleThickLine" id="totalBottomLine">
     </div>

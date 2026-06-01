@@ -52,7 +52,7 @@ function getFormInfo(event){
 
 
 
-//code from meta ai...
+//option 2 for thank you message
 // 1. Target the form using its class name
 const contactForm = document.querySelector(".contactForm");
 
@@ -90,7 +90,7 @@ function getFormInfo(event) {
 
 
 
-
+//option 3 for thank you message
 //saves HTML elements in variables so that we can access them easily in JavaScript
 let contactForm = document.getElementById("contactForm");
 let userName = document.getElementById("name");
@@ -171,3 +171,88 @@ let displayUserInfo = (currentUsername) => {
 contactForm.addEventListener('submit', displayUserInfo);
 clearInfo.addEventListener("click", clearAllInfo);
 window.addEventListener("DOMContentLoaded", loadInfo);
+
+
+
+
+
+//adding items to the cart
+// Load existing cart from localStorage on page load, or start empty
+let cart = JSON.parse(localStorage.getItem('cradleContainer')) || [];
+
+// Initial UI render on page load
+updateCartUI();
+
+// Event listener for add-to-cart buttons
+document.querySelectorAll('.addButton').forEach(button => {
+  button.addEventListener('click', (event) => {
+    const product = {
+      id: event.target.getAttribute('data-id'),
+      name: event.target.getAttribute('data-name'),
+      price: parseFloat(event.target.getAttribute('data-price')),
+      quantity: 1
+    };
+    addItemToCart(product);
+  });
+});
+
+function addItemToCart(newProduct) {
+  const existingProduct = cart.find(item => item.id === newProduct.id);
+  
+  if (existingProduct) {
+    existingProduct.quantity += 1;
+  } else {
+    cart.push(newProduct);
+  }
+  
+  // Save updated array to localStorage as a string string
+  localStorage.setItem('cradleContainer', JSON.stringify(cart));
+  
+  updateCartUI();
+}
+
+function updateCartUI() {
+  const cartListDisplay = document.getElementById('cartItemsList');
+  const cartTotalDisplay = document.getElementById('cartTotalPrice');
+  
+  if(!cartListDisplay) return; // Guard clause
+  
+  cartListDisplay.innerHTML = '';
+  let totalCost = 0;
+  
+  cart.forEach(item => {
+    const listItem = document.createElement('li');
+    
+
+
+    
+    //delete dalk hierdie...
+    listItem.textContent = `${item.name} x ${item.quantity} - R${item.price * item.quantity}`;
+    cartListDisplay.appendChild(listItem);
+    totalCost += item.price * item.quantity;
+    //...tot hier delete
+  });
+  
+  cartTotalDisplay.textContent = totalCost.toFixed(2);
+}
+
+// Function to send cart to your Node.js backend during checkout
+async function checkoutCart() {
+  try {
+    const response = await fetch('http://localhost:3000/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: cart })
+    });
+    
+    const result = await response.json();
+    if (result.success) {
+      alert('Order placed!');
+      cart = [];
+      localStorage.removeItem('shoppingCart'); // Clear storage on success
+      updateCartUI();
+    }
+  } catch (error) {
+    console.error('Checkout failed:', error);
+  }
+}

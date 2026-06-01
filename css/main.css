@@ -899,7 +899,7 @@ body {
     font-weight: 600;
 }
 
-#addButton{
+.addButton{
     padding: 12px 60px;
     background-color: #15d5f5;
     color: #fff;
@@ -1117,7 +1117,7 @@ a i{
     color: #15d5f5;
 }
 
-.cradleItemsSection h4{
+.cradleContainer h4{
     margin-top: 40px;
     margin-left: 100px;
     font-weight: 500;
