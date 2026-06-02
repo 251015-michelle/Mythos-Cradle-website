@@ -264,31 +264,28 @@ async function checkoutCart() {
 
 
 //creating a functional search bar
-document.getElementById('searchForm').addEventListener('submit', function(e) {
-  e.preventDefault(); // Stops the page from refreshing
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+  event.preventDefault();
   
   const query = document.getElementById('searchInput').value.trim().toLowerCase();
   
   if (query) {
-    window.location.href = `adoption.html?search=${encodeURIComponent(query)}`;
+    window.location.href = `adopt.html?search=${encodeURIComponent(query)}`;
   }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Get the search term from the URL
   const urlParams = new URLSearchParams(window.location.search);
   const searchTerm = urlParams.get('search');
 
   if (searchTerm) {
-    // 2. Find the animal element on the page (matches an id or data attribute)
     const targetAnimal = document.getElementById(searchTerm) || 
                          document.querySelector(`[data-name="${searchTerm}"]`);
 
     if (targetAnimal) {
-      // 3. Smoothly scroll the user to the specific animal
       targetAnimal.scrollIntoView({ behavior: 'smooth', block: 'center' });
       
-      // Optional: Add a temporary highlight class for visual feedback
+      
       targetAnimal.classList.add('highlighted-pet');
     } else {
       console.log("Animal not found on this page.");
