@@ -1,4 +1,4 @@
-//input counters are working!!!
+//input counters oordoen!! geen parse of ||
 const counterContainers = document.querySelectorAll('.counterContainer');
 
 counterContainers.forEach(container => {
