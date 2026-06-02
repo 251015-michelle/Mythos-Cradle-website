@@ -156,32 +156,5 @@ async function checkoutCart() {
 
 
 //creating a functional search bar
-document.getElementById('searchForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  const query = document.getElementById('searchInput').value.trim().toLowerCase();
-  
-  if (query) {
-    window.location.href = `adopt.html?search=${encodeURIComponent(query)}`;
-  }
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const searchTerm = urlParams.get('search');
-
-  if (searchTerm) {
-    const targetAnimal = document.getElementById(searchTerm) || 
-                         document.querySelector(`[data-name="${searchTerm}"]`);
-
-    if (targetAnimal) {
-      targetAnimal.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      
-      
-      targetAnimal.classList.add('highlighted-pet');
-    } else {
-      console.log("Animal not found on this page.");
-    }
-  }
-});
 
