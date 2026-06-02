@@ -874,7 +874,7 @@ body {
     align-items: center;
 }
 
-.decrement{
+.counterBtn{
     margin: 10px;
     font-weight: 600;
     font-size: 14pt;
@@ -886,19 +886,7 @@ body {
     border: none;
 }
 
-.increment{
-    margin: 10px;
-    font-weight: 600;
-    font-size: 14pt;
-    padding: 3px 10px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    background-color: #002d6800;
-    color: #fff;
-    border: none;
-}
-
-.counterNumber{
+#inputVal{
     background: none;
     color: #fff;
     width: 20px;

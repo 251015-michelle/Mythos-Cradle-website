@@ -1,29 +1,20 @@
-//input counters oordoen!! geen parse of ||
-const counterContainers = document.querySelectorAll('.counterContainer');
-
-counterContainers.forEach(container => {
-  const decrementBtn = container.querySelector('.decrement');
-  const incrementBtn = container.querySelector('.increment');
-  const input = container.querySelector('.counterNumber');
-
-  incrementBtn.addEventListener('click', () => {
-    let currentValue = parseInt(input.value) || 1;
-    const max = parseInt(input.getAttribute('max')) || 5;
-
-    if (currentValue < max) {
-        input.value = currentValue + 1;
+//input counter: eerste een werk maar die res doen nie... wat actually gebeur is wanneer ek die ondertoe-er counters increase of decrease
+function decCount(){
+    let num = document.getElementById('inputVal').value;
+    if(num > 1){
+      num --;
     }
-  });
+    document.getElementById('inputVal').value = num;
+};
 
-  decrementBtn.addEventListener('click', () => {
-    let currentValue = parseInt(input.value) || 1;
-    const min = parseInt(input.getAttribute('min')) || 1;
-    
-    if (currentValue > min) {
-        input.value = currentValue - 1;
+function incCount(){
+    let num = document.getElementById('inputVal').value;
+    if(num < 10){
+      num ++;
     }
-  });
-});
+    document.getElementById('inputVal').value = num;
+};
+
 
 
 //form thank you message is working!!!
