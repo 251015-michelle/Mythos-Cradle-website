@@ -104,7 +104,7 @@ p{
 
     position: absolute;
     right: 0;
-    padding-right: 10px;
+    padding-right: 50px;
     top: 0;
     padding-top: 15px;
 }
@@ -123,6 +123,11 @@ p{
     color: #000;
     padding: 5px 20px;
     border-radius: 10px;
+}
+
+.searchRes{
+    text-decoration: none;
+    color: #000;
 }
 
 #magnifyingGlass{

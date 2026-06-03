@@ -31,17 +31,23 @@
                 <a href="adopt.html">Adopt</a>
                 <a id="contactLink" href="#">Contact</a>
             </div>
-            <div class="searchBar">
-                <form class="searchForm" id="searchForm">
-                    <i id="magnifyingGlass" class="fa-regular fa-magnifying-glass"></i>
-                    <input type="text" id="searchInput" placeholder="Search" required>
-                    <p id="searchLineFaded">|</p>
-                    <a href="pages/cradle.html">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </a>
-                </form>
-                <div class="searchContainer">
-                    <span class="badge">2</span>
+            <div class="searchContainer">
+                <div class="searchBar">
+                    <form class="searchForm" id="searchForm">
+                        <div class="searchBarElements">
+                            <button id="magnifyingGlass"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input type="text" id="searchInput" placeholder="Search" autocomplete="off" required>
+                            <p id="searchLineFaded">|</p>
+                            <a>
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </a>
+                        </div>
+                        <div class="searchResult">
+                        </div>
+                    </form>
+                    <div class="searchContainer">
+                        <span class="badge">2</span>
+                    </div>
                 </div>
             </div>
         </nav>

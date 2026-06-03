@@ -1,3 +1,4 @@
+// input counters are working
 function decCount(inputID){
     let num = document.getElementById(inputID).value;
     if(num > 1){
@@ -17,27 +18,20 @@ function incCount(inputID){
 
 
 
-
-
-
-
-
-
-// creating a functional search bar
-// question: where do I put the anchor tags with the links in to take the user to the specific part of the adopt page?
+// search bar is working!
 let availableKeywords = [
   'Azuron',
-  'Blue Dragon',
+  'Dragon',
   'Yuki',
   'Kitsune',
   'Aurelia',
   'Griffin',
   'Lumina',
-  'Water Wisp',
+  'Wisp',
   'Starwind',
   'Pegasus',
   'Briar',
-  'Forest Spirit',
+  'Spirit',
 ];
 
 const searchResult = document.querySelector(".searchResult");
@@ -63,7 +57,11 @@ searchInput.onkeyup = function(){
 
 function display(result){
   const content = result.map((list) => {
-    return "<li onclick=selectInput(this)>" + list + "</li>";
+    // output1 = "<li onclick=selectInput(this)>" list "</li>"
+    
+    output = `<a href="../pages/adopt.html#${result}" class="searchRes"><li onclick=selectInput(this)"> ${list} </li></a>
+    `;
+    return output;
   });
 
   searchResult.innerHTML = "<ul>" + content.join('') + "</ul>";
@@ -123,4 +121,4 @@ function getFormInfo(event){
 
     formModal.addEventListener('hidden.bs.modal', function () {
     contactForm.reset();
-});
+}); 

@@ -32,17 +32,23 @@
                     <a id="adoptLink" href="#">Adopt</a>
                     <a href="contact.html">Contact</a>
                 </div>
-                <div class="searchBar">
-                    <form class="searchForm" id="searchForm">
-                        <i id="magnifyingGlass" class="fa-regular fa-magnifying-glass"></i>
-                        <input type="text" id="searchInput" placeholder="Search" required>
-                        <p id="searchLineFaded">|</p>
-                        <a href="pages/cradle.html">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-                    </form>
-                    <div class="searchContainer">
-                        <span class="badge">2</span>
+                <div class="searchContainer">
+                    <div class="searchBar">
+                        <form class="searchForm" id="searchForm">
+                            <div class="searchBarElements">
+                                <button id="magnifyingGlass"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <input type="text" id="searchInput" placeholder="Search" autocomplete="off" required>
+                                <p id="searchLineFaded">|</p>
+                                <a>
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </a>
+                            </div>
+                            <div class="searchResult">
+                            </div>
+                        </form>
+                        <div class="searchContainer">
+                            <span class="badge">2</span>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -85,7 +91,7 @@
         <button id="stickyButton">View Cradle</button>
     </a>
 
-    <section class="adopt1" id="azuron" data-name="blue dragon" class="animal-card" name="Blue Dragon" name="Azuron">
+    <section class="adopt1" id="Azuron" id="Dragon" data-name="blue dragon" class="animal-card" name="Blue Dragon" name="Azuron">
         <div class="adoptWhite">
             <div class="adoptImg">
                 <img src="../assets/img/adopt1.png" alt="adopt1">
@@ -112,14 +118,38 @@
                         <input type="text" value="1" id="azuronInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('azuronInput')">+</button>
                     </div>
-                    <button class="addButton" data-id="1" data-name="Blue Dragon - Azuron" data-price="R2 500.00">Add to Cradle</button>
+                    <button class="addButton" type="button" data-bs-toggle="cradleModal" data-bs-target="#exampleModal">Add to Cradle</button>
                 </div>
 
+                <!-- Button trigger modal PS: delete hierdie!! -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+                </button>
+                <!-- Delete tot hier -->
 
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
 
-                <div class="modal" id="cradleModal" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
+                <!--ou modal wat jy as reference moet gebruik-->
+                <div class="cradleModal" id="cradleModal" tabindex="-1">
+                    <div class="cradleModalDialog">
+                        <div class="cradleModalContent">
                             <div class="cradleModalHeader">
                                 <h1 class="cradleModalTitle">Your Cradle</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -176,7 +206,7 @@
     </section>
 
 
-    <section class="adopt2" id="yuki" data-name="kitsune" class="animal-card" name="Kitsune" name="Yuki">
+    <section class="adopt2" id="Yuki" id="Kitsune" data-name="kitsune" class="animal-card" name="Kitsune" name="Yuki">
         <div class="adoptBlue">
             <div class="adoptImg">
                 <img src="../assets/img/adopt2.png" alt="adopt2">
@@ -200,7 +230,7 @@
                 <div class="counterAndButton">
                     <div class="counterContainer" id="counterOrange">
                         <button class="counterBtn" id="decrement" onclick="decCount('yukiInput')">-</button>
-                        <input type="text" value="1" class="inputVal" id="yukiInput">
+                        <input type="text" value="1" id="yukiInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('yukiInput')">+</button>
                     </div>
                     <button class="addButton" data-id="2" data-name="Kitsune - Yuki" data-price="R4 500.00">Add to Cradle</button>
@@ -231,7 +261,7 @@
     </section>
 
 
-    <section class="adopt3" id="aurelia" data-name="griffin" class="animal-card" name="Griffin" name="Aurelia">
+    <section class="adopt3" id="Aurelia" id="Griffin" data-name="griffin" class="animal-card" name="Griffin" name="Aurelia">
         <div class="adoptWhite">
             <div class="adoptImg">
                 <img src="../assets/img/adopt3.png" alt="adopt3">
@@ -253,9 +283,9 @@
                 <p class="adoptParagraph">Aurelia is a proud little griffin, courageous yet gentle. She loves climbing, exploring high perches, and curling up near those she trusts, always watching the world with wise golden eyes. She adores gentle games of chase and loves to show off her tiny but majestic wings.</p>
                 <div class="counterAndButton">
                     <div class="counterContainer" id="counterBlue">
-                        <button class="counterBtn" id="decrement" onclick="decCount()">-</button>
-                        <input type="text" value="1" id="inputVal">
-                        <button class="counterBtn" id="increment" onclick="incCount()">+</button>
+                        <button class="counterBtn" id="decrement" onclick="decCount('aureliaInput')">-</button>
+                        <input type="text" value="1" id="aureliaInput" class="inputVal">
+                        <button class="counterBtn" id="increment" onclick="incCount('aureliaInput')">+</button>
                     </div>
                     <button class="addButton" data-id="3" data-name="Griffin - Aurelia" data-price="R6 500.00">Add to Cradle</button>
                 </div>
@@ -285,7 +315,7 @@
     </section>
 
 
-    <section class="adopt4" id="lumina" data-name="water wisp" class="animal-card" name="Water Wisp" name="Lumina">
+    <section class="adopt4" id="Lumina" id="Wisp" data-name="water wisp" class="animal-card" name="Water Wisp" name="Lumina">
         <div class="adoptBlue">
             <div class="adoptImg">
                 <img src="../assets/img/adopt4.png" alt="adopt4">
@@ -309,9 +339,9 @@
                 <p class="adoptParagraph">Lumina drifts like a shimmer of moonlight, soft and gentle. Playful and curious, she glides through her surroundings, bringing calm and quiet magic wherever she goes. She loves to follow gentle ripples in water or light games, leaving a faint glowing trail that enchants everyone nearby.</p>
                 <div class="counterAndButton">
                     <div class="counterContainer" id="counterOrange">
-                        <button class="counterBtn" id="decrement" onclick="decCount()">-</button>
-                        <input type="text" value="1" id="inputVal">
-                        <button class="counterBtn" id="increment" onclick="incCount()">+</button>
+                        <button class="counterBtn" id="decrement" onclick="decCount('luminaInput')">-</button>
+                        <input type="text" value="1" id="luminaInput" class="inputVal">
+                        <button class="counterBtn" id="increment" onclick="incCount('luminaInput')">+</button>
                     </div>
                     <button class="addButton" data-id="4" data-name="Water Wisp - Lumina" data-price="R40,000.00">Add to Cradle</button>
                 </div>
@@ -341,7 +371,7 @@
     </section>
 
 
-    <section class="adopt5" id="starwind" data-name="pegasus" class="animal-card" name="Pegasus" name="Starwind">
+    <section class="adopt5" id="Starwind" id="Pegasus" data-name="pegasus" class="animal-card" name="Pegasus" name="Starwind">
         <div class="adoptWhite">
             <div class="adoptImg">
                 <img src="../assets/img/adopt5.png" alt="adopt5">
@@ -364,9 +394,9 @@
                 <p class="adoptParagraph">Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves short flights and sunny naps, his gleaming wings always ready for discovery. He enjoys small games of chase and nuzzles to show affection, quickly forming strong bonds with those he trusts.</p>
                 <div class="counterAndButton">
                     <div class="counterContainer" id="counterBlue">
-                        <button class="counterBtn" id="decrement" onclick="decCount()">-</button>
-                        <input type="text" value="1" id="inputVal">
-                        <button class="counterBtn" id="increment" onclick="incCount()">+</button>
+                        <button class="counterBtn" id="decrement" onclick="decCount('starwindInput')">-</button>
+                        <input type="text" value="1" id="starwindInput" class="inputVal">
+                        <button class="counterBtn" id="increment" onclick="incCount('starwindInput')">+</button>
                     </div>
                     <button class="addButton" data-id="5" data-name="Pegasus - Starwind" data-price="R5 000.00">Add to Cradle</button>
                 </div>
@@ -396,7 +426,7 @@
     </section>
 
 
-    <section class="adopt6" id="briar" data-name="forest spirit" class="animal-card" name="Forest Spirit" name="Briar">
+    <section class="adopt6" id="Briar" id="Spirit" data-name="forest spirit" class="animal-card" name="Forest Spirit" name="Briar">
         <div class="adoptBlue">
             <div class="adoptImg">
                 <img src="../assets/img/adopt6.png" alt="adopt6">
@@ -420,9 +450,9 @@
                 <p class="adoptParagraph">Briar is a tiny guardian of the woods, curious, gentle, and full of life. He loves leafy hideaways and quietly exploring gardens, always humming with a touch of magic. He enjoys collecting small natural treasures and bringing them to his caretakers as gifts, showing his playful personality.</p>
                 <div class="counterAndButton">
                     <div class="counterContainer" id="counterOrange">
-                        <button class="counterBtn" id="decrement" onclick="decCount()">-</button>
-                        <input type="text" value="1" id="inputVal">
-                        <button class="counterBtn" id="increment" onclick="incCount()">+</button>
+                        <button class="counterBtn" id="decrement" onclick="decCount('briarInput')">-</button>
+                        <input type="text" value="1" id="briarInput" class="inputVal">
+                        <button class="counterBtn" id="increment" onclick="incCount('briarInput')">+</button>
                     </div>
                     <button class="addButton" data-id="6" data-name="Forest Spirit - Briar" data-price="R3 500.00">Add to Cradle</button>
                 </div>
