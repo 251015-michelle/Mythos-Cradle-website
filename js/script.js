@@ -57,6 +57,56 @@ function getFormInfo(event){
 
 
 
+//creating a functional search bar
+//question: where do I put the anchor tags with the links in to take the user to the specific part of the adopt page?
+let availableKeywords = [
+  'Azuron' <a id="blueDragonAzuron">Blue Dragon</a> , //is this done correctly?
+  'Blue Dragon',
+  'Yuki',
+  'Kitsune',
+  'Aurelia',
+  'Griffin',
+  'Lumina',
+  'Water Wisp',
+  'Starwind',
+  'Pegasus',
+  'Briar',
+  'Forest Spirit',
+];
+
+const searchResult = document.querySelector(".searchResult");
+const searchInput = document.getElementById("searchInput");
+
+searchInput.onkeyup = function(){
+  let result = [];
+  let input = searchInput.value;
+
+  if (input.length){
+    result = availableKeywords.filter((keyword) => {
+      return keyword.toLowerCase().includes(input.toLowerCase());
+    });
+    console.log(result);
+  };
+
+  display(result);
+
+  if(!result.length){
+    searchResult.innerHTML = '';
+  };
+};
+
+function display(result){
+  const content = result.map((list) => {
+    return "<li onclick=selectInput(this)>" + list + "</li>";
+  });
+
+  searchResult.innerHTML = "<ul>" + content.join('') + "</ul>";
+};
+
+function selectInput(list){
+  searchInput.value = list.innerHTML;
+  searchResult.innerHTML = '';
+}
 
 
 
@@ -73,10 +123,3 @@ function getFormInfo(event){
 
 
 //numbers/prices reflect on the total. You can use the calculator class exercise for reference on that I think :)
-
-
-
-
-//creating a functional search bar
-
-

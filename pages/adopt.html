@@ -85,7 +85,7 @@
         <button id="stickyButton">View Cradle</button>
     </a>
 
-    <section class="adopt1" id="azuron" data-name="blue dragon" class="animal-card">
+    <section class="adopt1" id="azuron" data-name="blue dragon" class="animal-card" name="Blue Dragon" name="Azuron">
         <div class="adoptWhite">
             <div class="adoptImg">
                 <img src="../assets/img/adopt1.png" alt="adopt1">
@@ -114,6 +114,40 @@
                     </div>
                     <button class="addButton" data-id="1" data-name="Blue Dragon - Azuron" data-price="R2 500.00">Add to Cradle</button>
                 </div>
+
+                <div class="modal" id="cradleModal" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="cradleModalHeader">
+                                <h1 class="cradleModalTitle">Your Cradle</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="cradleModalBody">
+                                <h4>Your Creatures</h4>
+                                <hr class="cradleThickLine" id="cradleHeadingLine">
+                                <div class="cradleItems">
+                                    <ul id="cartItemsList"><!-- JavaScript will inject items here --></ul>
+                                </div>
+                            </div>
+                            <div class="cradleModalFooter">
+                                <div class="orderSummary">
+                                    <h4>ORDER SUMMARY</h4>
+                                    <p id="totalItems">2 Items</p>
+                                    <p>discount code</p>
+                                    <p>TOTAL COST: R6000.00</p>
+                                    <div class="optionBTNs">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Searching</button>
+                                <button type="button" class="btn btn-primary">Finish Adoption</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
                 <hr id="adoptLine">
                 <div class="package">
                     <div class="packageLeft">
@@ -140,7 +174,7 @@
     </section>
 
 
-    <section class="adopt2" id="yuki" data-name="kitsune" class="animal-card">
+    <section class="adopt2" id="yuki" data-name="kitsune" class="animal-card" name="Kitsune" name="Yuki">
         <div class="adoptBlue">
             <div class="adoptImg">
                 <img src="../assets/img/adopt2.png" alt="adopt2">
@@ -195,7 +229,7 @@
     </section>
 
 
-    <section class="adopt3" id="aurelia" data-name="griffin" class="animal-card">
+    <section class="adopt3" id="aurelia" data-name="griffin" class="animal-card" name="Griffin" name="Aurelia">
         <div class="adoptWhite">
             <div class="adoptImg">
                 <img src="../assets/img/adopt3.png" alt="adopt3">
@@ -249,7 +283,7 @@
     </section>
 
 
-    <section class="adopt4" id="lumina" data-name="water wisp" class="animal-card">
+    <section class="adopt4" id="lumina" data-name="water wisp" class="animal-card" name="Water Wisp" name="Lumina">
         <div class="adoptBlue">
             <div class="adoptImg">
                 <img src="../assets/img/adopt4.png" alt="adopt4">
@@ -305,7 +339,7 @@
     </section>
 
 
-    <section class="adopt5" id="starwind" data-name="pegasus" class="animal-card">
+    <section class="adopt5" id="starwind" data-name="pegasus" class="animal-card" name="Pegasus" name="Starwind">
         <div class="adoptWhite">
             <div class="adoptImg">
                 <img src="../assets/img/adopt5.png" alt="adopt5">
@@ -360,7 +394,7 @@
     </section>
 
 
-    <section class="adopt6" id="briar" data-name="forest spirit" class="animal-card">
+    <section class="adopt6" id="briar" data-name="forest spirit" class="animal-card" name="Forest Spirit" name="Briar">
         <div class="adoptBlue">
             <div class="adoptImg">
                 <img src="../assets/img/adopt6.png" alt="adopt6">
