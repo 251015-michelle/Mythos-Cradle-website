@@ -108,12 +108,14 @@
                 <p class="adoptParagraph">Azuron is a curious little dragon with a spark of mischief in his eyes. He loves exploring hidden nooks and curling up in warm spots after a playful flight, leaving tiny trails of blue sparks wherever he goes. He thrives on attention and gentle play, and his favorite games involve chasing floating spark orbs around the room</p>
                 <div class="counterAndButton">
                     <div class="counterContainer" id="counterBlue">
-                        <button class="counterBtn" id="decrement" onclick="decCount()">-</button>
-                        <input type="text" value="1" id="inputVal">
-                        <button class="counterBtn" id="increment" onclick="incCount()">+</button>
+                        <button class="counterBtn" id="decrement" onclick="decCount('azuronInput')">-</button>
+                        <input type="text" value="1" id="azuronInput" class="inputVal">
+                        <button class="counterBtn" id="increment" onclick="incCount('azuronInput')">+</button>
                     </div>
                     <button class="addButton" data-id="1" data-name="Blue Dragon - Azuron" data-price="R2 500.00">Add to Cradle</button>
                 </div>
+
+
 
                 <div class="modal" id="cradleModal" tabindex="-1">
                     <div class="modal-dialog">
@@ -197,9 +199,9 @@
                 <p class="adoptParagraph">Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas. She delights in playful tricks and quietly watching over her friends, her tails swishing with contentment. Yuki especially enjoys interactive games and hiding small trinkets to surprise her caretakers</p>
                 <div class="counterAndButton">
                     <div class="counterContainer" id="counterOrange">
-                        <button class="counterBtn" id="decrement" onclick="decCount()">-</button>
-                        <input type="text" value="1" id="inputVal">
-                        <button class="counterBtn" id="increment" onclick="incCount()">+</button>
+                        <button class="counterBtn" id="decrement" onclick="decCount('yukiInput')">-</button>
+                        <input type="text" value="1" class="inputVal" id="yukiInput">
+                        <button class="counterBtn" id="increment" onclick="incCount('yukiInput')">+</button>
                     </div>
                     <button class="addButton" data-id="2" data-name="Kitsune - Yuki" data-price="R4 500.00">Add to Cradle</button>
                 </div>

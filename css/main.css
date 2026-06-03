@@ -926,7 +926,7 @@ body {
     border: none;
 }
 
-#inputVal{
+.inputVal{
     background: none;
     color: #fff;
     width: 20px;

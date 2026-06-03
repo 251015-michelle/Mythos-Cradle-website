@@ -1,18 +1,18 @@
-//input counter: eerste een werk maar die res doen nie... wat actually gebeur is wanneer ek die ondertoe-er counters increase of decrease
-function decCount(){
-    let num = document.getElementById('inputVal').value;
+
+function decCount(inputID){
+    let num = document.getElementById(inputID).value;
     if(num > 1){
       num --;
     }
-    document.getElementById('inputVal').value = num;
+    document.getElementById(inputID).value = num;
 };
 
-function incCount(){
-    let num = document.getElementById('inputVal').value;
+function incCount(inputID){
+    let num = document.getElementById(inputID).value;
     if(num < 10){
       num ++;
     }
-    document.getElementById('inputVal').value = num;
+    document.getElementById(inputID).value = num;
 };
 
 
@@ -60,7 +60,7 @@ function getFormInfo(event){
 //creating a functional search bar
 //question: where do I put the anchor tags with the links in to take the user to the specific part of the adopt page?
 let availableKeywords = [
-  'Azuron' <a id="blueDragonAzuron">Blue Dragon</a> , //is this done correctly?
+  'Azuron',
   'Blue Dragon',
   'Yuki',
   'Kitsune',
