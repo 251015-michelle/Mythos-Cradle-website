@@ -1,4 +1,3 @@
-
 function decCount(inputID){
     let num = document.getElementById(inputID).value;
     if(num > 1){
@@ -17,48 +16,15 @@ function incCount(inputID){
 
 
 
-//form thank you message is working!!!
-let contactForm = document.forms['contactForm'];
-
-contactForm.addEventListener("submit", getFormInfo);
-
-function getFormInfo(event){
-
-    event.preventDefault();
-
-    let formData = {
-        "name": this['name'].value,
-        "email": this['email'].value,
-        "subject": this['subject'].value,
-        "message": this['message'].value,
-    };
-
-    let output =`
-        <p>
-            Thank you for your message,  
-            <span>${formData['name']}</span>
-            !
-        </p>
-    `;
-
-    document.querySelector(".outputContainer").innerHTML = output;
-
-    let formModal = new bootstrap.Modal(document.getElementById("formModal"));
-
-    formModal.show();
-};
-
-    formModal.addEventListener('hidden.bs.modal', function () {
-    contactForm.reset();
-});
 
 
 
 
 
 
-//creating a functional search bar
-//question: where do I put the anchor tags with the links in to take the user to the specific part of the adopt page?
+
+// creating a functional search bar
+// question: where do I put the anchor tags with the links in to take the user to the specific part of the adopt page?
 let availableKeywords = [
   'Azuron',
   'Blue Dragon',
@@ -123,3 +89,38 @@ function selectInput(list){
 
 
 //numbers/prices reflect on the total. You can use the calculator class exercise for reference on that I think :)
+
+//form thank you message is working!!!
+let contactForm = document.forms['contactForm'];
+
+contactForm.addEventListener("submit", getFormInfo);
+
+function getFormInfo(event){
+
+    event.preventDefault();
+
+    let formData = {
+        "name": this['name'].value,
+        "email": this['email'].value,
+        "subject": this['subject'].value,
+        "message": this['message'].value,
+    };
+
+    let output =`
+        <p>
+            Thank you for your message,  
+            <span>${formData['name']}</span>
+            !
+        </p>
+    `;
+
+    document.querySelector(".outputContainer").innerHTML = output;
+
+    let formModal = new bootstrap.Modal(document.getElementById("formModal"));
+
+    formModal.show();
+};
+
+    formModal.addEventListener('hidden.bs.modal', function () {
+    contactForm.reset();
+});
