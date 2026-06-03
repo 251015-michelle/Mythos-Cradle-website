@@ -100,6 +100,11 @@ p{
 
 .searchForm{
     display: flex;
+    flex-direction: column;
+}
+
+.searchBarElements{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -110,20 +115,24 @@ p{
 }
 
 #magnifyingGlass{
+    background: transparent;
+    border: none;
     color: #8b8b8b;
     margin-right: 8px;
+    padding: 0px;
+    cursor: pointer;
 }
 
 #searchInput{
     width: 180px;
-    font-size: 14px;
-    color: #000;
+    font-size: 16px;
+    outline: none;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
 }
 
-#searchForm ::placeholder{
-    color: #000;
+#searchInput ::placeholder{
+    color: #4d4d4d;
     font-weight: 400;
 }
 
@@ -134,8 +143,29 @@ p{
     font-weight: 300;
 }
 
-.searchForm p{
+.searchBarElements p{
     margin-bottom: 0;
+}
+
+.searchResult{
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.searchResult ul{
+    padding: 5px 10px;
+}
+
+.searchResult ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.searchResult ul li:hover{
+    background: #e9f3ff;
 }
 
 .badge{
