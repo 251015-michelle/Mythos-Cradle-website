@@ -177,7 +177,7 @@ function displayCradleItems(){
                     </div>
                 </div>
                 <div class="creatureInfoDelete"> 
-                    <div class="delete">
+                    <div class="delete" onclick="removeFromCradle(${creature['data-id']})">
                         <i class="fa-solid fa-trash-can"></i>
                     </div>
                 </div> 
@@ -192,10 +192,40 @@ function displayCradleItems(){
   
   cradleModal.show();
 
-  document.getElementById("cradleModal").addEventListener('hidden.bs.modal', function () {
+  cradleModal.addEventListener('hidden.bs.modal', function () {
     cradleItemsList.innerHTML = "";
   });
 };
+
+
+
+// function changeNumberOfUnits(action, id){
+//   cradle = cradle.map(() => {
+
+//     let oldNumberOfUnits = item.numberOfUnits;
+
+//     if(item['data-id'] === id){
+//       if(action === decCount){
+//         oldNumberOfUnits--;
+//       }else(action === incCount){
+//         oldNumberOfUnits ++;
+//       };
+//     };
+
+//     return{
+//       ...item,
+//       numberOfUnits: oldNumberOfUnits,
+//     };
+//   });
+
+//   updateCradle();
+// };
+
+
+
+
+
+
 
 
 
