@@ -114,18 +114,53 @@ const creatures = [
   },
 ];
 
-//to select the elements if there isn't elements/product to show yet...
-const creaturesEl = document.querySelector(".fakeClassName");
-//to add items to the cart
+//to add items to the cart/cradle
 const cradleItemsList = document.getElementById("cradleItemsList");
+const addButtons = document.querySelectorAll(".addButton");
 
-//to display creatures in the cart modal
-function displayCreatures(){
-    cradleItemsList.innerHTML = "";
 
-    creatures.forEach((creature) => {
-      cradleItemsList.innerHTML += `
-      <div class="creaturesToBuy">
+//cradle array
+let cradle = [];
+
+//add 'click' listeners to add to cradle buttons
+addButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const creatureId = parseInt(button.dataset.id);
+    addToCradle(creatureId);
+  });
+});
+
+//add creature to cart array
+function addToCradle(id){
+  //check if creature already exists in cart/cradle
+  if(cradle.some((item) => item['data-id'] === id)){
+    alert("Creature already in cradle!");
+  } else {
+    const item = creatures.find((product) => product['data-id'] === id);
+
+    cradle.push({
+      ...item,
+      numberOfUnits : 1,
+    });
+  };
+
+  updateCradle();
+};
+
+//update cradle/cart
+function updateCradle(){
+  displayCradleItems();
+  // displayTotal();
+}
+
+//display cradle/cart items
+function displayCradleItems(){
+
+  cradleItemsList.innerHTML = "";
+
+  cradle.forEach((creature) => {
+    cradleItemsList.innerHTML += `
+    <div class="creaturesToBuy">
         <div class="creatureInfoLayout">
             <div class="creatureImg">
                 <img src="${creature['data-image']}" alt="${creature['data-name']}">
@@ -150,42 +185,17 @@ function displayCreatures(){
         </div>
         <hr class="cradleItemEndLine">
       </div>
-      `;
+    `;
+  });
+
+  let cradleModal = new bootstrap.Modal(document.getElementById("cradleModal"));
+  
+  cradleModal.show();
+
+  document.getElementById("cradleModal").addEventListener('hidden.bs.modal', function () {
+    cradleItemsList.innerHTML = "";
   });
 };
-
-displayCreatures();
-
-//cradle array
-let cradle = [];
-
-//add to cart
-function addToCradle(id){
-  //check if product already exists in cart/cradle
-  if(cradle.some((item) => item['data-id'] === id)){
-    alert("Creature already in cradle!");
-  } else {
-    const item = creatures.find((product) => product['data-id'] === id);
-
-    cradle.push({
-      ...item,
-      numberOfUnits : 1,
-    });
-  };
-
-  updateCradle();
-};
-
-//update cradle/cart
-function updateCradle(){
-  displayCradleItems();
-  // displayTotal();
-}
-
-//display cradle/cart items
-function 
-
-
 
 
 
