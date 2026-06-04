@@ -1207,7 +1207,7 @@ a i{
     margin-top: 15px;
 }
 
-#cradleItemEndLine{
+.cradleItemEndLine{
     background-color: #9f9f9f;
     border: none;
     height: 1.5px;
@@ -1271,7 +1271,7 @@ a i{
     flex-direction: column;
 }
 
-#cradleCounter{
+.cradleCounter{
     background-color: #002d68;
     color: #fff;
     border: none;

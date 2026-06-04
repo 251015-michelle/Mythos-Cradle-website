@@ -17,7 +17,6 @@ function incCount(inputID){
 
 
 
-
 // search bar is working!
 let availableKeywords = [
   'Azuron',
@@ -76,6 +75,117 @@ function selectInput(list){
 
 
 //adding items to the cart
+const creatures = [
+  {
+    "data-id": 1,
+    "data-name": "Blue Dragon - Azuron",
+    "data-price": "R2 500.00",
+    "data-image": "../assets/img/adopt1.png",
+  },
+  {
+    "data-id": 2,
+    "data-name": "Kitsune - Yuki",
+    "data-price": "R4 500.00",
+    "data-image": "../assets/img/adopt2.png",
+  },
+  {
+    "data-id": 3,
+    "data-name": "Griffin - Aurelia",
+    "data-price": "R6 500.00",
+    "data-image": "../assets/img/adopt3.png",
+  },
+  {
+    "data-id": 4,
+    "data-name": "Water Wisp - Lumina",
+    "data-price": "R40 000.00",
+    "data-image": "../assets/img/adopt4.png",
+  },
+  {
+    "data-id": 5,
+    "data-name": "Pegasus - Starwind",
+    "data-price": "R5 000.00",
+    "data-image": "../assets/img/adopt5.png",
+  },
+  {
+    "data-id": 6,
+    "data-name": "Forest Spirit - Briar",
+    "data-price": "R3 500.00",
+    "data-image": "../assets/img/adopt6.png",
+  },
+];
+
+//to select the elements if there isn't elements/product to show yet...
+const creaturesEl = document.querySelector(".fakeClassName");
+//to add items to the cart
+const cradleItemsList = document.getElementById("cradleItemsList");
+
+//to display creatures in the cart modal
+function displayCreatures(){
+    cradleItemsList.innerHTML = "";
+
+    creatures.forEach((creature) => {
+      cradleItemsList.innerHTML += `
+      <div class="creaturesToBuy">
+        <div class="creatureInfoLayout">
+            <div class="creatureImg">
+                <img src="${creature['data-image']}" alt="${creature['data-name']}">
+            </div>
+            <div class="creatureInfo">
+                <div class="creatureInfoDetails">
+                    <p class="nameOfCreature">${creature['data-name']}</p>
+                    <p class="price">${creature['data-price']}</p>
+                    <p class="starterPack">Includes the starter pack</p>
+                    <div class="counterContainer cradleCounter">
+                      <button class="counterBtn" id="decrement" onclick="decCount('${creature['data-id']}Input')">-</button>
+                      <input type="text" value="1" id="${creature['data-id']}Input" class="inputVal">
+                      <button class="counterBtn" id="increment" onclick="incCount('${creature['data-id']}Input')">+</button>
+                    </div>
+                </div>
+                <div class="creatureInfoDelete"> 
+                    <div class="delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <hr class="cradleItemEndLine">
+      </div>
+      `;
+  });
+};
+
+displayCreatures();
+
+//cradle array
+let cradle = [];
+
+//add to cart
+function addToCradle(id){
+  //check if product already exists in cart/cradle
+  if(cradle.some((item) => item['data-id'] === id)){
+    alert("Creature already in cradle!");
+  } else {
+    const item = creatures.find((product) => product['data-id'] === id);
+
+    cradle.push({
+      ...item,
+      numberOfUnits : 1,
+    });
+  };
+
+  updateCradle();
+};
+
+//update cradle/cart
+function updateCradle(){
+  displayCradleItems();
+  // displayTotal();
+}
+
+//display cradle/cart items
+function 
+
+
 
 
 

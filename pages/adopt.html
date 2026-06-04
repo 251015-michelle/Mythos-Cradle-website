@@ -88,7 +88,7 @@
 
 <section class="adoptSection">
     <a href="cradle.html">
-        <button id="stickyButton">View Cradle</button>
+        <button id="stickyButton" type="button" data-bs-toggle="cradleModal" data-bs-target="#cradleModal">View Cradle</button>
     </a>
 
     <section class="adopt1" id="Azuron" id="Dragon" data-name="blue dragon" class="animal-card" name="Blue Dragon" name="Azuron">
@@ -118,68 +118,8 @@
                         <input type="text" value="1" id="azuronInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('azuronInput')">+</button>
                     </div>
-                    <button class="addButton" type="button" data-bs-toggle="cradleModal" data-bs-target="#exampleModal">Add to Cradle</button>
+                    <button class="addButton" type="button" data-bs-toggle="modal" data-bs-target="#cradleModal" data-id="1" data-name="Blue Dragon - Azuron" data-price="R2 500.00">Add to Cradle</button>
                 </div>
-
-                <!-- Button trigger modal PS: delete hierdie!! -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-                </button>
-                <!-- Delete tot hier -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <!--ou modal wat jy as reference moet gebruik-->
-                <div class="cradleModal" id="cradleModal" tabindex="-1">
-                    <div class="cradleModalDialog">
-                        <div class="cradleModalContent">
-                            <div class="cradleModalHeader">
-                                <h1 class="cradleModalTitle">Your Cradle</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="cradleModalBody">
-                                <h4>Your Creatures</h4>
-                                <hr class="cradleThickLine" id="cradleHeadingLine">
-                                <div class="cradleItems">
-                                    <ul id="cartItemsList"><!-- JavaScript will inject items here --></ul>
-                                </div>
-                            </div>
-                            <div class="cradleModalFooter">
-                                <div class="orderSummary">
-                                    <h4>ORDER SUMMARY</h4>
-                                    <p id="totalItems">2 Items</p>
-                                    <p>discount code</p>
-                                    <p>TOTAL COST: R6000.00</p>
-                                    <div class="optionBTNs">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Searching</button>
-                                <button type="button" class="btn btn-primary">Finish Adoption</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
                 <hr id="adoptLine">
                 <div class="package">
                     <div class="packageLeft">
@@ -233,7 +173,7 @@
                         <input type="text" value="1" id="yukiInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('yukiInput')">+</button>
                     </div>
-                    <button class="addButton" data-id="2" data-name="Kitsune - Yuki" data-price="R4 500.00">Add to Cradle</button>
+                    <button class="addButton" type="button" data-bs-toggle="modal" data-bs-target="#cradleModal" data-id="2" data-name="Kitsune - Yuki" data-price="R4 500.00">Add to Cradle</button>
                 </div>
                 <hr id="adoptLine">
                 <div class="package">
@@ -287,7 +227,7 @@
                         <input type="text" value="1" id="aureliaInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('aureliaInput')">+</button>
                     </div>
-                    <button class="addButton" data-id="3" data-name="Griffin - Aurelia" data-price="R6 500.00">Add to Cradle</button>
+                    <button class="addButton" type="button" data-bs-toggle="modal" data-bs-target="#cradleModal" data-id="3" data-name="Griffin - Aurelia" data-price="R6 500.00">Add to Cradle</button>
                 </div>
                 <hr id="adoptLine">
                 <div class="package">
@@ -343,7 +283,7 @@
                         <input type="text" value="1" id="luminaInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('luminaInput')">+</button>
                     </div>
-                    <button class="addButton" data-id="4" data-name="Water Wisp - Lumina" data-price="R40,000.00">Add to Cradle</button>
+                    <button class="addButton" type="button" data-bs-toggle="modal" data-bs-target="#cradleModal" data-id="4" data-name="Water Wisp - Lumina" data-price="R40 000.00">Add to Cradle</button>
                 </div>
                 <hr id="adoptLine">
                 <div class="package">
@@ -398,7 +338,7 @@
                         <input type="text" value="1" id="starwindInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('starwindInput')">+</button>
                     </div>
-                    <button class="addButton" data-id="5" data-name="Pegasus - Starwind" data-price="R5 000.00">Add to Cradle</button>
+                    <button class="addButton" type="button" data-bs-toggle="modal" data-bs-target="#cradleModal" data-id="5" data-name="Pegasus - Starwind" data-price="R5 000.00">Add to Cradle</button>
                 </div>
                 <hr id="adoptLine">
                 <div class="package">
@@ -454,7 +394,7 @@
                         <input type="text" value="1" id="briarInput" class="inputVal">
                         <button class="counterBtn" id="increment" onclick="incCount('briarInput')">+</button>
                     </div>
-                    <button class="addButton" data-id="6" data-name="Forest Spirit - Briar" data-price="R3 500.00">Add to Cradle</button>
+                    <button class="addButton" type="button" data-bs-toggle="modal" data-bs-target="#cradleModal" data-id="6" data-name="Forest Spirit - Briar" data-price="R3 500.00">Add to Cradle</button>
                 </div>
                 <hr id="adoptLine">
                 <div class="package">
@@ -481,6 +421,44 @@
         </div>
     </section>
 
+    <!-- Button trigger modal PS: delete hierdie!! -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cradleModal">
+        Launch demo modal
+    </button>
+    <!-- Delete tot hier -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="cradleModal" tabindex="-1" aria-labelledby="cradleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="cradleModalLabel">Your Cradle</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Your Creatures</h4>
+                    <hr class="cradleThickLine" id="cradleHeadingLine">
+                    <div class="cradleItems">
+                        <ul id="cradleItemsList"><!-- JavaScript will inject items here --></ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="orderSummary">
+                        <h4>ORDER SUMMARY</h4>
+                        <p id="totalItems">2 Items</p>
+                        <p>discount code</p>
+                        <p>TOTAL COST: R6000.00</p>
+                        <div class="optionBTNs">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Searching</button>
+                            <button type="button" class="btn btn-primary">Finish Adoption</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 </section>
 
 
