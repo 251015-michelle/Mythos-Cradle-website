@@ -189,10 +189,10 @@ function displayCradleItems(){
                     </div>
                 </div>
                 <div class="creatureInfoDelete"> 
-                    <div class="delete" onclick="removeFromCradle(${creature['data-id']})">
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </div> 
+                  <div class="delete" onclick="removeFromCradle(${creature['data-id']})">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                </div>
             </div>
         </div>
         <hr class="cradleItemEndLine">

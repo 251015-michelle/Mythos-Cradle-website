@@ -576,13 +576,7 @@ body {
     color: #15d5f5;
 }
 
-.cradleModalHeader{
-    height: 45vh;
-    background-image: url(../assets/img/cradleHeader.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-}
+
 
 .cradleModalTitle{
     color: #fff;
@@ -1166,31 +1160,76 @@ body {
 #cradleModalHeader{
     height: 30vh;
     background-image: url(../assets/img/cradleModalHeader.png);
-    
     background-position: right;
     background-repeat: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#cradleHeadingLine{
-    width: 88%;
-    margin-right: 100px;
-    background-color: #000;
+h1#cradleModalLabel.modal-title {
+    font-family: "TitleFont";
+    font-size: 75pt !important;
+    color: #fff;
+    margin-left: 60px;
+}
+
+#cradleModalCloseBtn{
+    opacity: 1;
+    margin-bottom: 175px;
+    margin-right: 0px;
+    padding-top: 0px;
+}
+
+.cradleItems{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.creatureInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.creatureInfoLayout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.creatureImg {
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.creatureImg img{
+    width: 150px;
+    height: auto;
+}
+
+.nameOfCreature{
+    font-weight: 400;
+}
+
+.cradleCounter{
+    background-color: #002d68;
+    color: #fff;
     border: none;
-    height: 1.5px;
+    border-radius: 12px;
+    margin-right: 135px;
+    margin-top: 25px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
-#totalTopLine{
-    width: 96%;
-    margin-left: auto;
-    margin-right: 88px;
-    margin-bottom: 15px;
-}
-
-#totalBottomLine{
-    width: 96%;
-    margin-left: auto;
-    margin-right: 88px;
-    margin-top: 15px;
+.delete{
+    padding-left: 300px;
 }
 
 .cradleItemEndLine{
@@ -1202,110 +1241,50 @@ body {
     margin-right: auto;
 }
 
-.cradleItems{
-    margin: 20px 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.modal-footer{
+    color: #000;
+    width: 100%;
 }
 
-.creatureInfoLayout{
+.orderSummary{
+    padding: 10px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.creatureImg img{
-    width: 35%;
-    height: auto;
-}
-
-.creatureInfo{
-    display: flex;
-    flex-direction: row;
-}
-
-.nameOfCreature{
-    font-weight: 400;
-}
-
-.delete i{
-    padding-left: 100px;
-}
-
-
-.orderSummary{
-    background-color: #002d68;
-    border: 2px solid #e9ad1c;
-    color: #fff;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.orderSummary h4{
-    display: flex;
-    
+    justify-content: space-between;
+    width: 100%;
 }
 
 #totalItems{
     font-size: 16px;
+    margin: 0;
+}
+
+.orderInfo h4 {
+    margin: 0;
 }
 
 .optionBTNs{
     display: flex;
-    flex-direction: column;
-}
-
-.cradleCounter{
-    background-color: #002d68;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    margin-right: 135px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .cradleOptionBtn{
     font-size: 14pt;
     font-weight: 600;
-    margin-top: 20px;
-    margin-left: 0px;
-    margin-right: 20px;
     padding: 10px 20px;
     background-color: #e9ad1c;
     color: #fff;
-    font-weight: 600;
     border: none;
     border-radius: 12px;
+    cursor: pointer;
+}
+
+#continueSearchingBtn{
+    background-color: #002d68;
 }
 
 #finishAdoptionBtn{
     background-color: #15d5f5;
-}
-
-.total{
-    margin-left: 120px;
-}
-
-.totalInfo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#totalWord{
-    padding-right: 20px;
-    font-weight: 600;
-    font-size: 20px;
-    margin: 0px;
-}
-
-#totalAmount{
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0px;
 }
