@@ -198,19 +198,6 @@ p{
     padding: 0px;
 }
 
-.badge{
-    position: absolute;
-    top: 5px;
-    right: 40px;
-    background-color: #15d5f5;
-    color: white;
-    padding: 7px 10px;
-    border-radius: 50%;
-    font-size: 14px;
-    font-weight: 500;
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
 .hero{
     display: flex;
     flex-flow: column wrap-reverse;
