@@ -186,6 +186,14 @@ p{
     background: #e9f3ff;
 }
 
+.cradleIcon{
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    padding: 0px;
+}
+
 .badge{
     position: absolute;
     top: 5px;
@@ -557,10 +565,18 @@ hr {
     background-repeat: none;
 }
 
+.headerText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    color: #fff;
+}
+
 .blurContainer{
     background-color: #ffffff0e;
     backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px);
-    padding-bottom: 8px;
+    padding-bottom: 60px;
     padding-top: 15px;
 }
 
