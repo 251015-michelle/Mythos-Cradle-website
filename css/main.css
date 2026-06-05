@@ -96,6 +96,10 @@ p{
     font-weight: 500;
 }
 
+.navLinks a:hover{
+    color: #50bfd7;
+}
+
 #homeLink{
     color: #15d5f5;
 }
@@ -215,6 +219,7 @@ p{
     height: 63vh;
     
     margin: 100px;
+    margin-top: 130px;
     margin-left: 900px;
     color: #fff;
 }
@@ -295,6 +300,10 @@ p{
     font-weight: 600;
     border: none;
     border-radius: 12px;
+}
+
+#firstCradleALegendBtn{
+    padding: 20px 30px;
 }
 
 .aboutTheCradle{
@@ -471,6 +480,14 @@ p{
     margin: 4px;
 }
 
+.socialMediaLinks a{
+    text-decoration: none;
+}
+
+.socialMediaLinks a img:hover{
+    transform: scale(1.1);
+}
+
 .footerDetails{
     margin-left: 90px;
     margin-right: 100px;
@@ -496,6 +513,10 @@ p{
 
     display: flex;
     flex-direction: column;
+}
+
+.footerLinks a:hover{
+    color: #15d5f5;
 }
 
 #footerCompany{
@@ -1095,6 +1116,14 @@ body {
     height: auto;
     margin: 4px;
     margin-bottom: 100px;
+}
+
+.contactSocialLinks a{
+    text-decoration: none;
+}
+
+.contactSocialLinks a img:hover{
+    transform: scale(1.1);
 }
 
 .contactForm{
