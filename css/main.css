@@ -1159,38 +1159,24 @@ body {
 
 
 
-.cradleHeader{
-    height: 45vh;
+
+
+
+
+#cradleModalHeader{
+    height: 30vh;
     background-image: url(../assets/img/cradleHeader.png);
-    background-size: cover;
+    
     background-position: center;
     background-repeat: none;
-    padding-top: 15px;
-}
-
-a i{
-  color: #000;
-}
-
-#cradleLink{
-    color: #15d5f5;
-}
-
-.cradleContainer h4{
-    margin-top: 40px;
-    margin-left: 100px;
-    font-weight: 500;
-}
-
-.cradleThickLine{
-    background-color: #000;
-    border: none;
-    height: 1.5px;
 }
 
 #cradleHeadingLine{
     width: 88%;
     margin-right: 100px;
+    background-color: #000;
+    border: none;
+    height: 1.5px;
 }
 
 #totalTopLine{
@@ -1246,6 +1232,7 @@ a i{
 .delete i{
     padding-left: 100px;
 }
+
 
 .orderSummary{
     background-color: #002d68;

@@ -221,7 +221,7 @@ cradleModal.addEventListener('hidden.bs.modal', function () {
 
 
 
-//form thank you message is working!!!
+//form thank you message isn't working now?!?!
 let contactForm = document.forms['contactForm'];
 
 contactForm.addEventListener("submit", getFormInfo);
@@ -247,7 +247,7 @@ function getFormInfo(event){
 
     document.querySelector(".outputContainer").innerHTML = output;
 
-    let formModal = new bootstrap.Modal(document.getElementById("formModal"));
+    const formModal = new bootstrap.Modal(document.getElementById("formModal"));
 
     formModal.show();
 };
