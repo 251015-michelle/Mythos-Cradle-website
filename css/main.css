@@ -1165,9 +1165,9 @@ body {
 
 #cradleModalHeader{
     height: 30vh;
-    background-image: url(../assets/img/cradleHeader.png);
+    background-image: url(../assets/img/cradleModalHeader.png);
     
-    background-position: center;
+    background-position: right;
     background-repeat: none;
 }
 
