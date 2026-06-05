@@ -56,8 +56,6 @@ searchInput.onkeyup = function(){
 
 function display(result){
   const content = result.map((list) => {
-    // output1 = "<li onclick=selectInput(this)>" list "</li>"
-    
     output = `<a href="../pages/adopt.html#${result}" class="searchRes"><li onclick=selectInput(this)"> ${list} </li></a>
     `;
     return output;
@@ -117,7 +115,7 @@ const creatures = [
 //to add items to the cart/cradle
 const cradleItemsList = document.getElementById("cradleItemsList");
 const addButtons = document.querySelectorAll(".addButton");
-
+const cradleModal = new bootstrap.Modal(document.getElementById("cradleModal"));
 
 //cradle array
 let cradle = [];
@@ -130,22 +128,37 @@ addButtons.forEach((button) => {
   });
 });
 
+
 //add creature to cart array
 function addToCradle(id){
-  //check if creature already exists in cart/cradle
-  if(cradle.some((item) => item['data-id'] === id)){
-    alert("Creature already in cradle!");
+  const existingItem = cradle.find((item) => item['data-id'] === id);
+
+  let inputID = "";
+  if (id === 1) inputID = "azuronInput";
+  if (id === 2) inputID = "yukiInput";
+  if (id === 3) inputID = "aureliaInput";
+  if (id === 4) inputID = "luminaInput";
+  if (id === 5) inputID = "starwindInput";
+  if (id === 6) inputID = "briarInput";
+
+  //see what number the user chose in the adopt page's HTML input counter
+  const creatureCardInput = document.getElementById(inputID);
+  
+  const quantityToAdd = creatureCardInput ? parseInt(creatureCardInput.value) || 1 : 1;
+
+  if (existingItem) {
+    existingItem.numberOfUnits += quantityToAdd;
   } else {
     const item = creatures.find((product) => product['data-id'] === id);
 
     cradle.push({
       ...item,
-      numberOfUnits : 1,
+      numberOfUnits : quantityToAdd,
     });
-  };
+  }
 
   updateCradle();
-};
+}
 
 //update cradle/cart
 function updateCradle(){
@@ -155,7 +168,6 @@ function updateCradle(){
 
 //display cradle/cart items
 function displayCradleItems(){
-
   cradleItemsList.innerHTML = "";
 
   cradle.forEach((creature) => {
@@ -172,7 +184,7 @@ function displayCradleItems(){
                     <p class="starterPack">Includes the starter pack</p>
                     <div class="counterContainer cradleCounter">
                       <button class="counterBtn" id="decrement" onclick="decCount('${creature['data-id']}Input')">-</button>
-                      <input type="text" value="1" id="${creature['data-id']}Input" class="inputVal">
+                      <input type="text" value="${creature.numberOfUnits}" id="${creature['data-id']}Input" class="inputVal">
                       <button class="counterBtn" id="increment" onclick="incCount('${creature['data-id']}Input')">+</button>
                     </div>
                 </div>
@@ -188,38 +200,12 @@ function displayCradleItems(){
     `;
   });
 
-  let cradleModal = new bootstrap.Modal(document.getElementById("cradleModal"));
-  
   cradleModal.show();
-
-  cradleModal.addEventListener('hidden.bs.modal', function () {
-    cradleItemsList.innerHTML = "";
-  });
 };
 
-
-
-// function changeNumberOfUnits(action, id){
-//   cradle = cradle.map(() => {
-
-//     let oldNumberOfUnits = item.numberOfUnits;
-
-//     if(item['data-id'] === id){
-//       if(action === decCount){
-//         oldNumberOfUnits--;
-//       }else(action === incCount){
-//         oldNumberOfUnits ++;
-//       };
-//     };
-
-//     return{
-//       ...item,
-//       numberOfUnits: oldNumberOfUnits,
-//     };
-//   });
-
-//   updateCradle();
-// };
+cradleModal.addEventListener('hidden.bs.modal', function () {
+    cradleItemsList.innerHTML = "";
+});
 
 
 
@@ -232,11 +218,8 @@ function displayCradleItems(){
 
 
 
-//now you have to let the input counter totals reflect in the cart when adding an item
 
 
-
-//numbers/prices reflect on the total. You can use the calculator class exercise for reference on that I think :)
 
 //form thank you message is working!!!
 let contactForm = document.forms['contactForm'];
